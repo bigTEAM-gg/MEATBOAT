@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bi4nj58c2oqhf"]
+[gd_scene load_steps=18 format=3 uid="uid://bi4nj58c2oqhf"]
 
 [ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_k5bd8"]
 [ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_dvjaf"]
@@ -43,6 +43,9 @@ albedo_texture = ExtResource("3_8rg1u")
 [sub_resource type="SphereMesh" id="SphereMesh_xp73p"]
 material = SubResource("StandardMaterial3D_wp0ij")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_du6vn"]
+size = Vector3(7.76308, 8.34192, 0.099605)
+
 [node name="main" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -72,6 +75,11 @@ shape = SubResource("SphereShape3D_qrm6d")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="BBall"]
 mesh = SubResource("SphereMesh_xp73p")
 
-[node name="Zilla" type="Sprite3D" parent="."]
+[node name="Zilla" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.47189, 7.64503)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Zilla"]
+shape = SubResource("BoxShape3D_du6vn")
+
+[node name="Sprite3D" type="Sprite3D" parent="Zilla"]
 texture = ExtResource("4_hncjl")
