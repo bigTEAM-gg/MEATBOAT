@@ -1,0 +1,77 @@
+[gd_scene load_steps=17 format=3 uid="uid://bi4nj58c2oqhf"]
+
+[ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_k5bd8"]
+[ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_dvjaf"]
+[ext_resource type="Texture2D" uid="uid://g7xkr0ii0ts8" path="res://assets/bball.jpg" id="3_8rg1u"]
+[ext_resource type="Texture2D" uid="uid://b27mmihmaqkhd" path="res://assets/zilla.png" id="4_hncjl"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6wppf"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_ev2ki"]
+sky_material = SubResource("ProceduralSkyMaterial_6wppf")
+
+[sub_resource type="Environment" id="Environment_6ulqx"]
+background_mode = 2
+sky = SubResource("Sky_ev2ki")
+tonemap_mode = 2
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7yjm7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_trd07"]
+size = Vector3(49.5665, 0.343993, 49.6837)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skcfj"]
+albedo_texture = ExtResource("2_dvjaf")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1p28o"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_e7vhl"]
+material = SubResource("StandardMaterial3D_1p28o")
+size = Vector3(50, 0.1, 50)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_68350"]
+rough = true
+bounce = 0.5
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qrm6d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wp0ij"]
+albedo_texture = ExtResource("3_8rg1u")
+
+[sub_resource type="SphereMesh" id="SphereMesh_xp73p"]
+material = SubResource("StandardMaterial3D_wp0ij")
+
+[node name="main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6ulqx")
+
+[node name="Player" parent="." instance=ExtResource("1_k5bd8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.21655, 1.16602, -0.0543165)
+
+[node name="Floor" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_7yjm7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_trd07")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+material_override = SubResource("StandardMaterial3D_skcfj")
+mesh = SubResource("BoxMesh_e7vhl")
+
+[node name="BBall" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19401, 1.68475, -3.28027)
+mass = 10.0
+physics_material_override = SubResource("PhysicsMaterial_68350")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BBall"]
+shape = SubResource("SphereShape3D_qrm6d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BBall"]
+mesh = SubResource("SphereMesh_xp73p")
+
+[node name="Zilla" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.47189, 7.64503)
+texture = ExtResource("4_hncjl")
