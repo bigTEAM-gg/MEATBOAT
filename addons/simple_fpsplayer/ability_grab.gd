@@ -9,7 +9,7 @@ var can_use = true
 # This entire script is dedicated to the ability_grab node and it's child node GradPosition3D. It's allows players to pick up and throw Rigid Bodies in a similar fashion to Source games.
 # This section asks the raycast to check for a Rigid Body, see if it qualifies to be carried, and grab it player isn't currently carrying a Rigid Body.
 func _process(delta):
-	if Input.is_key_pressed(KEY_E):
+	if Input.is_action_pressed("grab"):
 		if can_use:
 			can_use = false
 			if not object_grabbed:
@@ -21,7 +21,7 @@ func _process(delta):
 		can_use = true
 
 	# This part throws whatever Rigid Body is held when Left-Click is pressed.
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+	if Input.is_action_pressed("throw"):
 		if object_grabbed:
 			object_grabbed.linear_velocity = global_transform.basis.z * -throw_force
 			release()
