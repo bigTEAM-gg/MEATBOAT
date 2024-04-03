@@ -1,0 +1,92 @@
+[gd_scene load_steps=16 format=3 uid="uid://bb7y24nigxi17"]
+
+[ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_aqx7j"]
+[ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_pslgr"]
+[ext_resource type="Material" uid="uid://b31ve4wo5s035" path="res://assets/materials/ps1model.tres" id="3_h3wop"]
+[ext_resource type="Texture2D" uid="uid://b27mmihmaqkhd" path="res://assets/zilla.png" id="4_r13ua"]
+[ext_resource type="PackedScene" uid="uid://cswuaei3mm3t5" path="res://assets/BoatStaticMesh/donotpass.dae" id="5_s0ng1"]
+
+[sub_resource type="Environment" id="Environment_6sp3w"]
+background_mode = 1
+ambient_light_source = 1
+tonemap_mode = 2
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gtqlg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hyhp5"]
+size = Vector3(49.5665, 0.343993, 49.6837)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7xfl"]
+albedo_texture = ExtResource("2_pslgr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1p28o"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_oto1m"]
+material = SubResource("StandardMaterial3D_1p28o")
+size = Vector3(50, 0.1, 50)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wlfut"]
+rough = true
+bounce = 0.5
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xwx2r"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_pgrgi"]
+material = ExtResource("3_h3wop")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tyoxu"]
+size = Vector3(7.76308, 8.34192, 0.099605)
+
+[node name="Level1" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.581442, 0.813588, 0, -0.813588, -0.581442, 0, 15.6002, 0)
+light_color = Color(1, 0.870588, 0.870588, 1)
+light_energy = 0.1
+light_bake_mode = 1
+shadow_enabled = true
+shadow_opacity = 0.5
+shadow_blur = 0.0
+directional_shadow_mode = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6sp3w")
+
+[node name="Player" parent="." instance=ExtResource("1_aqx7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.21655, 1.16602, -0.0543165)
+
+[node name="Floor" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_gtqlg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_hyhp5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+material_override = SubResource("StandardMaterial3D_q7xfl")
+mesh = SubResource("BoxMesh_oto1m")
+
+[node name="BBall" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19401, 1.68475, -3.28027)
+mass = 10.0
+physics_material_override = SubResource("PhysicsMaterial_wlfut")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BBall"]
+shape = SubResource("SphereShape3D_xwx2r")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BBall"]
+mesh = SubResource("SphereMesh_pgrgi")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="BBall"]
+
+[node name="Zilla" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.47189, 7.64503)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Zilla"]
+shape = SubResource("BoxShape3D_tyoxu")
+
+[node name="Sprite3D" type="Sprite3D" parent="Zilla"]
+shaded = true
+texture = ExtResource("4_r13ua")
+
+[node name="donotpass" parent="." instance=ExtResource("5_s0ng1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0911231, 0.171997, 2.31883)
