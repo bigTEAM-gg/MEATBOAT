@@ -1,0 +1,53 @@
+[gd_resource type="ProjectCache" load_steps=6 format=3 uid="uid://cuobxfdeki2lt"]
+
+[ext_resource type="BankAsset" uid="uid://foj1d3t6f4tr" path="res://addons/FMOD/editor/resources/banks/{8ba98baf-4510-43bb-a5a6-4efe99b936f5}.tres" id="1_nghme"]
+[ext_resource type="BankAsset" uid="uid://drpi6uruuxyc3" path="res://addons/FMOD/editor/resources/banks/{13b4ab7b-346b-0ff9-23ef-c400684a306d}.tres" id="2_131px"]
+[ext_resource type="BusAsset" uid="uid://cyuc3mwt608um" path="res://addons/FMOD/editor/resources/busses/{850171b4-b5d7-45e3-90b0-fa7862432c34}.tres" id="3_m35jl"]
+[ext_resource type="BusAsset" uid="uid://dht8fm2eqpqve" path="res://addons/FMOD/editor/resources/busses/{13c8e4b9-a999-4a03-8059-99db4fd169ec}.tres" id="4_0you0"]
+[ext_resource type="EventAsset" uid="uid://cafe8nusrjypn" path="res://addons/FMOD/editor/resources/events/{8b140bca-f256-4511-b1c9-8f27b280a60c}.tres" id="5_grhf3"]
+
+[resource]
+banks = {
+"{13b4ab7b-346b-0ff9-23ef-c400684a306d}": ExtResource("2_131px"),
+"{8ba98baf-4510-43bb-a5a6-4efe99b936f5}": ExtResource("1_nghme")
+}
+events = {
+"{8b140bca-f256-4511-b1c9-8f27b280a60c}": ExtResource("5_grhf3")
+}
+busses = {
+"{13c8e4b9-a999-4a03-8059-99db4fd169ec}": ExtResource("4_0you0"),
+"{850171b4-b5d7-45e3-90b0-fa7862432c34}": ExtResource("3_m35jl")
+}
+bank_tree = [{
+"children": [],
+"item_type": 3,
+"node_name": "Master",
+"path": "bank:/Master",
+"resource": ExtResource("1_nghme")
+}, {
+"children": [],
+"item_type": 3,
+"node_name": "Master.strings",
+"path": "bank:/Master.strings",
+"resource": ExtResource("2_131px")
+}]
+event_tree = [{
+"children": [],
+"item_type": 1,
+"node_name": "TypewriterEvent",
+"path": "event:/TypewriterEvent",
+"resource": ExtResource("5_grhf3")
+}]
+bus_tree = [{
+"children": [{
+"children": [],
+"item_type": 4,
+"node_name": "Reverb",
+"path": "bus:/Reverb",
+"resource": ExtResource("4_0you0")
+}],
+"item_type": 4,
+"node_name": "bus:",
+"path": "bus:/",
+"resource": ExtResource("3_m35jl")
+}]

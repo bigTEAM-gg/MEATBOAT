@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cafe8nusrjypn"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/TypewriterEvent"
+guid = "{8b140bca-f256-4511-b1c9-8f27b280a60c}"
+name = "TypewriterEvent"

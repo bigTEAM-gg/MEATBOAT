@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{37ea0e1f-44d6-4a7a-a04a-df7d87e11054}">
+		<property name="assetPath">
+			<value>lightclunk1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.37151927437641724</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7e153c60-4798-46c1-8b18-341f0c45441c}</destination>
+		</relationship>
+	</object>
+</objects>
