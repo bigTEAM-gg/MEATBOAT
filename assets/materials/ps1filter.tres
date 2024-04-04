@@ -1,7 +1,8 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bghm2bhnq7t7m"]
 
 [sub_resource type="Shader" id="Shader_l7ynn"]
-code = "shader_type canvas_item;
+code = "// https://godotshaders.com/shader/ps1-psx-postprocessing/
+shader_type canvas_item;
 
 render_mode unshaded;
 
@@ -78,5 +79,5 @@ void fragment() {
 shader = SubResource("Shader_l7ynn")
 shader_parameter/enabled = true
 shader_parameter/dithering = true
-shader_parameter/colors = 12
-shader_parameter/dither_size = 2
+shader_parameter/colors = 6
+shader_parameter/dither_size = 1
