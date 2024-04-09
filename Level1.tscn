@@ -1,14 +1,22 @@
-[gd_scene load_steps=16 format=3 uid="uid://bb7y24nigxi17"]
+[gd_scene load_steps=19 format=3 uid="uid://bb7y24nigxi17"]
 
 [ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_aqx7j"]
 [ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_pslgr"]
 [ext_resource type="Material" uid="uid://b31ve4wo5s035" path="res://assets/materials/ps1model.tres" id="3_h3wop"]
 [ext_resource type="Texture2D" uid="uid://b27mmihmaqkhd" path="res://assets/zilla.png" id="4_r13ua"]
 [ext_resource type="PackedScene" uid="uid://cswuaei3mm3t5" path="res://assets/BoatStaticMesh/donotpass.dae" id="5_s0ng1"]
+[ext_resource type="PackedScene" uid="uid://bucqaa3ydelm7" path="res://assets/BoatScenes/Boat.scn" id="6_k2v27"]
 
-[sub_resource type="Environment" id="Environment_6sp3w"]
-background_mode = 1
-ambient_light_source = 1
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i1h36"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_rcjhu"]
+sky_material = SubResource("ProceduralSkyMaterial_i1h36")
+
+[sub_resource type="Environment" id="Environment_7bddg"]
+background_mode = 2
+sky = SubResource("Sky_rcjhu")
 tonemap_mode = 2
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gtqlg"]
@@ -39,6 +47,9 @@ size = Vector3(7.76308, 8.34192, 0.099605)
 
 [node name="Level1" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7bddg")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.581442, 0.813588, 0, -0.813588, -0.581442, 0, 15.6002, 0)
 light_color = Color(1, 0.870588, 0.870588, 1)
@@ -49,11 +60,8 @@ shadow_opacity = 0.5
 shadow_blur = 0.0
 directional_shadow_mode = 1
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_6sp3w")
-
 [node name="Player" parent="." instance=ExtResource("1_aqx7j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.21655, 1.16602, -0.0543165)
+transform = Transform3D(-0.00970387, 0, -0.999953, 0, 1, 0, 0.999953, 0, -0.00970387, 15.1094, 9.32664, 2.12784)
 
 [node name="Floor" type="StaticBody3D" parent="."]
 physics_material_override = SubResource("PhysicsMaterial_gtqlg")
@@ -66,7 +74,7 @@ material_override = SubResource("StandardMaterial3D_q7xfl")
 mesh = SubResource("BoxMesh_oto1m")
 
 [node name="BBall" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19401, 1.68475, -3.28027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9923, 10.0849, 7.70622)
 mass = 10.0
 physics_material_override = SubResource("PhysicsMaterial_wlfut")
 
@@ -74,6 +82,7 @@ physics_material_override = SubResource("PhysicsMaterial_wlfut")
 shape = SubResource("SphereShape3D_xwx2r")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="BBall"]
+transform = Transform3D(0.985856, -0.167595, 0, 0.167595, 0.985856, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("SphereMesh_pgrgi")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="BBall"]
@@ -85,8 +94,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.47189, 7.64503)
 shape = SubResource("BoxShape3D_tyoxu")
 
 [node name="Sprite3D" type="Sprite3D" parent="Zilla"]
+transform = Transform3D(-0.260757, 0, -0.965404, 0, 1, 0, 0.965404, 0, -0.260757, 6.77472, 5.29627, -7.03462)
 shaded = true
 texture = ExtResource("4_r13ua")
 
 [node name="donotpass" parent="." instance=ExtResource("5_s0ng1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0911231, 0.171997, 2.31883)
+
+[node name="Boat" parent="." instance=ExtResource("6_k2v27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5719, 0, -2.19189)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0968, 6.91945, 0)
