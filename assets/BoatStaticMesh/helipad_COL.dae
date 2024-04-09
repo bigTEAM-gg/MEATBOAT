@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author/>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments/>
+    </contributor>
+    <created>2024-04-09T03:59:47Z</created>
+    <keywords/>
+    <modified>2024-04-09T03:59:47Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="0.010000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert1-fx" name="lambert1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.400000  0.400000 0.400000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="helipad_COL-lib" name="helipad_COLMesh">
+      <mesh>
+        <source id="helipad_COL-POSITION">
+          <float_array id="helipad_COL-POSITION-array" count="24">
+-253.247070 91.135780 -4225.856445
+-253.247070 91.135780 -3719.362061
+-253.247070 553.535828 -4225.856445
+-253.247070 553.535828 -3560.432861
+253.247070 553.535828 -4225.855957
+253.247070 553.535828 -3560.432861
+253.247070 91.135780 -4225.855957
+253.247070 91.135780 -3719.362061
+</float_array>
+          <technique_common>
+            <accessor source="#helipad_COL-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="helipad_COL-Normal0">
+          <float_array id="helipad_COL-Normal0-array" count="108">
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -0.325042 0.945700
+0.000000 -0.325042 0.945700
+0.000000 -0.325042 0.945700
+0.000000 -0.325042 0.945700
+0.000000 -0.325042 0.945700
+0.000000 -0.325042 0.945700
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+0.000001 0.000000 -1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#helipad_COL-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="helipad_COL-UV0">
+          <float_array id="helipad_COL-UV0-array" count="28">
+0.375000 0.000000
+0.625000 0.000000
+0.375000 0.250000
+0.625000 0.250000
+0.375000 0.500000
+0.625000 0.500000
+0.375000 0.750000
+0.625000 0.750000
+0.375000 1.000000
+0.625000 1.000000
+0.875000 0.000000
+0.875000 0.250000
+0.125000 0.000000
+0.125000 0.250000
+</float_array>
+          <technique_common>
+            <accessor source="#helipad_COL-UV0-array" count="14" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="helipad_COL-VERTEX">
+          <input semantic="POSITION" source="#helipad_COL-POSITION"/>
+        </vertices>
+        <triangles count="12" material="lambert1">
+          <input semantic="VERTEX" offset="0" source="#helipad_COL-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#helipad_COL-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#helipad_COL-UV0"/>
+          <p> 1 0 1 2 1 2 0 2 0 2 3 2 1 4 1 3 5 3 3 6 3 4 7 4 2 8 2 4 9 4 3 10 3 5 11 5 7 12 7 4 13 4 5 14 5 4 15 4 7 16 7 6 17 6 1 18 9 6 19 6 7 20 7 6 21 6 1 22 9 0 23 8 5 24 11 3 25 3 1 26 1 5 27 11 1 28 1 7 29 10 0 30 0 2 31 2 6 32 12 6 33 12 2 34 2 4 35 13</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="helipad_COL" name="helipad_COL">
+      <node name="helipad_COL" id="helipad_COL" layer="boat" sid="helipad_COL">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#helipad_COL-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert1" target="#lambert1"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>24.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.041667</start_time>
+          <end_time>8.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#helipad_COL"/>
+  </scene>
+</COLLADA>
