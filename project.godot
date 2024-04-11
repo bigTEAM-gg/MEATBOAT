@@ -27,6 +27,10 @@ window/size/always_on_top=true
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
+[dotnet]
+
+project/assembly_name="Horror-jam-17"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/FMOD/plugin.cfg")
