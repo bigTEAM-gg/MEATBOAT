@@ -3,15 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0wd8goy8h5s"
-path="res://.godot/imported/book_diffuse.png-379a5d53dbb542eeb43d116a499ce9b4.ctex"
+path.s3tc="res://.godot/imported/book_diffuse.png-379a5d53dbb542eeb43d116a499ce9b4.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Cabin/book_diffuse.png"
-dest_files=["res://.godot/imported/book_diffuse.png-379a5d53dbb542eeb43d116a499ce9b4.ctex"]
+dest_files=["res://.godot/imported/book_diffuse.png-379a5d53dbb542eeb43d116a499ce9b4.s3tc.ctex"]
 
 [params]
 

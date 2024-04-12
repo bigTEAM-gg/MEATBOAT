@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bb7y24nigxi17"]
+[gd_scene load_steps=26 format=3 uid="uid://bb7y24nigxi17"]
 
 [ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_aqx7j"]
 [ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_pslgr"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://sge7qh44trxa" path="res://scenes/DatBoi/dat_boi.tscn" id="8_lw2e4"]
 [ext_resource type="PackedScene" uid="uid://dnt2sov4042g8" path="res://scenes/Bed/bed.tscn" id="9_0kwep"]
 [ext_resource type="Texture2D" uid="uid://d0wd8goy8h5s" path="res://assets/Cabin/book_diffuse.png" id="9_qolm4"]
+[ext_resource type="PackedScene" uid="uid://ttw7wbtsqpb1" path="res://assets/Kitchen/kitchen_layout.dae" id="11_qv6yb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tyoxu"]
 size = Vector3(7.76308, 8.34192, 0.099605)
@@ -220,7 +221,7 @@ billboard = 1
 texture = ExtResource("4_ekhby")
 
 [node name="Player" parent="." instance=ExtResource("1_aqx7j")]
-transform = Transform3D(-0.00970387, 0, -0.999953, 0, 1, 0, 0.999953, 0, -0.00970387, 15.1094, 9.32664, 2.12784)
+transform = Transform3D(-0.00970387, 0, -0.999953, 0, 1, 0, 0.999953, 0, -0.00970387, 21.5567, 9.32664, 2.12784)
 
 [node name="bed" parent="." instance=ExtResource("9_0kwep")]
 transform = Transform3D(0.001117, 0, 0.999999, 0, 1, 0, -0.999999, 0, 0.001117, 16.3561, 8.21411, -6.14443)
@@ -234,3 +235,6 @@ mesh = SubResource("ArrayMesh_gdxaj")
 skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="book"]
+
+[node name="kitchen_layout" parent="." instance=ExtResource("11_qv6yb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9855, 8.23388, 0.298216)
