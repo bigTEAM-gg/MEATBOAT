@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://j28mbcoy0oia"]
+
+[ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="2_rurfh"]
+
+[sub_resource type="Environment" id="Environment_qtaw0"]
+background_mode = 1
+ambient_light_source = 2
+ambient_light_color = Color(0.443137, 0.466667, 0.611765, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fn3ce"]
+emission_enabled = true
+emission = Color(0.00784314, 0.698039, 0.823529, 1)
+emission_energy_multiplier = 2.0
+
+[node name="LightTest" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qtaw0")
+
+[node name="emissionbox" type="CSGBox3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -2.62516, 2.25, 0)
+material = SubResource("StandardMaterial3D_fn3ce")
+
+[node name="omnibox" type="CSGBox3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 6.31447, 2.25, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="omnibox"]
+light_color = Color(0.568627, 0.909804, 0.890196, 1)
+light_energy = 3.0
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(48, 0, 0, 0, 0.5, 0, 0, 0, 48, 0, 0, 0)
+use_collision = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.630324, -0.462956, 0.623189, -0.776332, -0.375885, 0.505982, 0, -0.802734, -0.596337, 0, 46.3163, 0)
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("2_rurfh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36688, 6.3201)

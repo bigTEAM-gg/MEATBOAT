@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bb7y24nigxi17"]
+[gd_scene load_steps=27 format=3 uid="uid://bb7y24nigxi17"]
 
 [ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_aqx7j"]
 [ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_pslgr"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dnt2sov4042g8" path="res://scenes/Bed/bed.tscn" id="9_0kwep"]
 [ext_resource type="Texture2D" uid="uid://d0wd8goy8h5s" path="res://assets/Cabin/book_diffuse.png" id="9_qolm4"]
 [ext_resource type="PackedScene" uid="uid://ttw7wbtsqpb1" path="res://assets/Kitchen/kitchen_layout.dae" id="11_qv6yb"]
+[ext_resource type="PackedScene" uid="uid://bsj5qtch5n7sh" path="res://environment/water.tscn" id="12_k1llt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tyoxu"]
 size = Vector3(7.76308, 8.34192, 0.099605)
@@ -238,3 +239,5 @@ skeleton = NodePath("")
 
 [node name="kitchen_layout" parent="." instance=ExtResource("11_qv6yb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9855, 8.23388, 0.298216)
+
+[node name="Ocean" parent="." instance=ExtResource("12_k1llt")]

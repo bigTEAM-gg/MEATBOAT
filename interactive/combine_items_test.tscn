@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmp0mslawqwd"]
+
+[ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_kwm8c"]
+[ext_resource type="PackedScene" uid="uid://blgyopm76h5qa" path="res://assets/Cabin/bed.dae" id="1_nt4fd"]
+[ext_resource type="PackedScene" uid="uid://1dkdxdiyq0r7" path="res://assets/Cabin/book.dae" id="2_4awsw"]
+
+[sub_resource type="Environment" id="Environment_e76uo"]
+
+[node name="CombineItemsTest" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_e76uo")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0425732, 0.999093, 0, -0.999093, 0.0425732, 0, 5.24332, 0)
+
+[node name="bed" parent="." instance=ExtResource("1_nt4fd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.503093, 0)
+
+[node name="floor" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0)
+use_collision = true
+
+[node name="Player" parent="." instance=ExtResource("1_kwm8c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30952, 2.24621)
+
+[node name="book1" parent="." instance=ExtResource("2_4awsw")]
+transform = Transform3D(0.668066, 0, -0.744102, 0, 1, 0, 0.744102, 0, 0.668066, 0, 1.13267, 0)
+
+[node name="book2" parent="." instance=ExtResource("2_4awsw")]
+transform = Transform3D(-0.235125, 0, -0.971965, 0, 1, 0, 0.971965, 0, -0.235125, 0.379588, 1.13473, 0)
