@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bb7y24nigxi17"]
+[gd_scene load_steps=28 format=3 uid="uid://bb7y24nigxi17"]
 
 [ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_aqx7j"]
 [ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_pslgr"]
@@ -10,8 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://sge7qh44trxa" path="res://scenes/DatBoi/dat_boi.tscn" id="8_lw2e4"]
 [ext_resource type="PackedScene" uid="uid://dnt2sov4042g8" path="res://scenes/Bed/bed.tscn" id="9_0kwep"]
 [ext_resource type="Texture2D" uid="uid://d0wd8goy8h5s" path="res://assets/Cabin/book_diffuse.png" id="9_qolm4"]
-[ext_resource type="PackedScene" uid="uid://ttw7wbtsqpb1" path="res://assets/Kitchen/kitchen_layout.dae" id="11_qv6yb"]
+[ext_resource type="PackedScene" uid="uid://du4sdvo5syf6d" path="res://scenes/kitchen_layout.tscn" id="11_0xgjk"]
 [ext_resource type="PackedScene" uid="uid://bsj5qtch5n7sh" path="res://environment/water.tscn" id="12_k1llt"]
+
+[sub_resource type="Environment" id="Environment_oiuje"]
+background_mode = 1
+background_color = Color(0.196078, 0.0392157, 0.0392157, 1)
+background_energy_multiplier = 0.1
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tyoxu"]
 size = Vector3(7.76308, 8.34192, 0.099605)
@@ -154,15 +159,13 @@ shadow_mesh = SubResource("ArrayMesh_n6y7h")
 
 [node name="Level1" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_oiuje")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.581442, 0.813588, 0, -0.813588, -0.581442, 0, 15.6002, 0)
-light_color = Color(1, 0.870588, 0.870588, 1)
-light_energy = 0.1
-light_bake_mode = 1
+transform = Transform3D(1, 0, 0, 0, -0.323175, 0.946339, 0, -0.946339, -0.323175, 0, 29.2103, 0)
 shadow_enabled = true
-shadow_opacity = 0.5
-shadow_blur = 0.0
-directional_shadow_mode = 1
+directional_shadow_mode = 0
 
 [node name="Zilla" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.47189, 7.64503)
@@ -237,7 +240,19 @@ skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="book"]
 
-[node name="kitchen_layout" parent="." instance=ExtResource("11_qv6yb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9855, 8.23388, 0.298216)
+[node name="kitchen_layout" parent="." instance=ExtResource("11_0xgjk")]
 
 [node name="Ocean" parent="." instance=ExtResource("12_k1llt")]
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(0.998804, 0, 0.0488846, 0, 1, 0, -0.0488846, 0, 0.998804, 27.7368, 10.6606, -10.0492)
+light_color = Color(1, 0, 0, 1)
+light_energy = 0.1
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 10.2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="OmniLight3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5816, 0, 11.8831)
+light_energy = 0.25
+shadow_enabled = true
