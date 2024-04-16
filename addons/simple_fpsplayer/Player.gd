@@ -81,6 +81,15 @@ func _physics_process(delta):
 	else:
 		accel = DEACCEL
 		moving = false
+	
+#	Logic for combining items:
+#	1. Define combinable_items = {item_1, item_2}
+#	2. Define requirements forcombination
+#	3. Check if item_1 and item_2 are in combinable_items: return true if both items meet the requirements, false otherwise
+#	4. If for_combination(item_1, item_2) is true: remove item_1 and item_2 from player's inventory
+#	5a. True: add new combined_item to player's inventory
+#	5b. False: return null or display an error message
+#	6. Feedback: Indicate to the player the result of the combination process
 
 
 	# Get the input direction and handle the movement/deceleration.
