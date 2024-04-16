@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author/>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments/>
+    </contributor>
+    <created>2024-04-16T05:13:11Z</created>
+    <keywords/>
+    <modified>2024-04-16T05:13:11Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="0.010000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert1-fx" name="lambert1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.400000  0.400000 0.400000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="corner-lib" name="cornerMesh">
+      <mesh>
+        <source id="corner-POSITION">
+          <float_array id="corner-POSITION-array" count="48">
+-97.531647 334.878662 -103.081650
+-97.531647 0.000000 -103.081650
+-103.081650 334.878662 -103.081650
+-103.081650 0.000000 -103.081650
+-103.081650 0.000000 0.000000
+-103.081650 334.878662 0.000000
+-97.531647 0.000000 0.000000
+-97.531647 334.878662 0.000000
+0.000000 334.878662 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 5.550000
+0.000000 334.878662 5.550000
+-103.081650 334.878662 0.000000
+-103.081650 0.000000 0.000000
+-103.081650 0.000000 5.550000
+-103.081650 334.878662 5.550000
+</float_array>
+          <technique_common>
+            <accessor source="#corner-POSITION-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="corner-Normal0">
+          <float_array id="corner-Normal0-array" count="198">
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#corner-Normal0-array" count="66" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="corner-UV0">
+          <float_array id="corner-UV0-array" count="88">
+0.252873 0.791677
+1.001206 0.488117
+1.001190 0.245205
+0.495784 0.791610
+0.194270 0.794275
+1.001190 0.489638
+0.498165 0.002471
+0.988127 0.488117
+1.001452 0.243671
+0.004457 0.792285
+0.996366 0.833863
+0.986366 0.002475
+1.001190 0.000760
+0.003965 0.807561
+0.743454 0.002470
+0.753455 0.833866
+0.743439 0.791610
+0.003965 0.820639
+0.247367 0.791609
+0.753455 0.846944
+0.988112 0.000774
+0.793107 0.820576
+0.245172 0.002472
+0.793106 0.807498
+0.194269 0.820706
+0.986350 0.791615
+0.983408 0.820702
+0.988374 0.243685
+0.983408 0.833781
+0.002261 0.003148
+0.194269 0.833785
+0.996366 0.846941
+0.988111 0.489638
+0.498047 0.791610
+0.988111 0.245206
+0.495567 0.002471
+0.194269 0.807354
+0.988126 0.732550
+0.983407 0.807434
+0.252655 0.002537
+0.741077 0.002507
+0.983409 0.794356
+0.740958 0.791647
+1.001204 0.732549
+</float_array>
+          <technique_common>
+            <accessor source="#corner-UV0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="corner-VERTEX">
+          <input semantic="POSITION" source="#corner-POSITION"/>
+        </vertices>
+        <triangles count="22" material="lambert1">
+          <input semantic="VERTEX" offset="0" source="#corner-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#corner-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#corner-UV0"/>
+          <p> 4 0 35 5 1 3 2 2 0 4 3 35 2 4 0 3 5 39 6 6 6 0 7 42 7 8 33 0 9 42 6 10 6 1 11 40 3 12 38 0 13 4 1 14 41 0 15 4 3 16 38 2 17 36 6 18 34 3 19 1 1 20 7 3 21 1 6 22 34 4 23 2 7 24 5 2 25 37 5 26 32 2 27 37 7 28 5 0 29 43 11 30 24 10 31 26 9 32 28 11 33 24 9 34 28 8 35 30 8 36 9 9 37 29 13 38 22 13 39 22 12 40 18 8 41 9 13 42 12 9 43 8 14 44 20 10 45 27 14 46 20 9 47 8 10 48 11 11 49 25 15 50 16 15 51 16 14 52 14 10 53 11 15 54 15 11 55 10 8 56 31 15 57 15 8 58 31 12 59 19 14 60 21 15 61 17 12 62 13 14 63 21 12 64 13 13 65 23</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="wall_corner" name="wall_corner">
+      <node name="corner" id="corner" sid="corner">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#corner-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert1" target="#lambert1"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>8.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#wall_corner"/>
+  </scene>
+</COLLADA>
