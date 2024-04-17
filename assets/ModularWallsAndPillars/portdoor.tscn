@@ -1,4 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1ukp2co75bov"]
+[gd_scene load_steps=8 format=3 uid="uid://d1ukp2co75bov"]
+
+[ext_resource type="Material" uid="uid://doef5ri6i7x8d" path="res://assets/materials/PortDoor/PortDoorMat.tres" id="1_8qrrl"]
+[ext_resource type="Material" uid="uid://c2qhrunfawjd1" path="res://assets/materials/PortDoor/PortDoorHandleMat.tres" id="2_n7806"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ccah"]
 resource_name = "lambert1"
@@ -73,7 +76,9 @@ shadow_mesh = SubResource("ArrayMesh_lx4dr")
 [node name="portdoor" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_23lx4")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_8qrrl")
 
 [node name="portdoor_handle" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_cge3y")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("2_n7806")

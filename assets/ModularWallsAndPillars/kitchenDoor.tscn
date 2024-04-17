@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://r7vq4p07k6ui"]
+[gd_scene load_steps=7 format=3 uid="uid://r7vq4p07k6ui"]
+
+[ext_resource type="Material" uid="uid://dplikvi4r3kea" path="res://assets/materials/KitchenDoor/KitchenDoorMat.tres" id="1_dgha8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ej5b"]
 resource_name = "lambert1"
@@ -75,7 +77,9 @@ shadow_mesh = SubResource("ArrayMesh_yxdfu")
 [node name="kitchendoor_l" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_ovdmg")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_dgha8")
 
 [node name="kitchendoor_r" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_3pnx8")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_dgha8")

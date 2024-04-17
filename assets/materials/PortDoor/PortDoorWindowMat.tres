@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://cdoyuamtximf6"]
+
+[ext_resource type="Texture2D" uid="uid://iov5vmc4doft" path="res://assets/materials/PortDoor/portdoor_portdoorwindowMAT_BaseColor.png" id="1_l8m63"]
+[ext_resource type="Texture2D" uid="uid://bojaexhnm45v3" path="res://assets/materials/PortDoor/portdoor_portdoorwindowMAT_Roughness.png" id="2_vcbq2"]
+
+[resource]
+albedo_texture = ExtResource("1_l8m63")
+roughness_texture = ExtResource("2_vcbq2")

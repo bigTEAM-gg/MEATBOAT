@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://c2jfgs80msghc"]
+
+[ext_resource type="Texture2D" uid="uid://d0lsp5ex4mbmt" path="res://assets/materials/GuestDoor/guestdoor_guestdoor_handle_MAT_BaseColor.png" id="1_ie8ql"]
+[ext_resource type="Texture2D" uid="uid://bqg65ef33k7d2" path="res://assets/materials/GuestDoor/guestdoor_guestdoor_handle_MAT_Metallic.png" id="2_y8mnj"]
+
+[resource]
+albedo_texture = ExtResource("1_ie8ql")
+metallic = 1.0
+metallic_texture = ExtResource("2_y8mnj")

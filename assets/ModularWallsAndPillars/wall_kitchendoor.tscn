@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://gvj7iby286dm"]
+[gd_scene load_steps=5 format=3 uid="uid://gvj7iby286dm"]
+
+[ext_resource type="Material" uid="uid://blg1i5swiqby" path="res://assets/materials/Wall/UglyWall.tres" id="1_2kuoe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b80m0"]
 resource_name = "lambert1"
@@ -41,3 +43,4 @@ shadow_mesh = SubResource("ArrayMesh_llx25")
 [node name="wall_kitchendoor" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_sjqnj")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_2kuoe")

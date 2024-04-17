@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bt2k1rda4tkyf"]
+[gd_scene load_steps=5 format=3 uid="uid://b65fqoilyhdgx"]
 
-[ext_resource type="Material" uid="uid://cgmeerup3t55y" path="res://assets/materials/ConcretePillar/ConcretePillarMat.tres" id="1_a3iey"]
+[ext_resource type="Material" uid="uid://jhhfxcsk3nsk" path="res://assets/materials/ConcretePillarMeat/ConcretePillarMeat.tres" id="1_uweji"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h36bx"]
 resource_name = "lambert1"
@@ -43,4 +43,4 @@ shadow_mesh = SubResource("ArrayMesh_i0bpm")
 [node name="pillar_industrial" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_wxupi")
 skeleton = NodePath("")
-surface_material_override/0 = ExtResource("1_a3iey")
+surface_material_override/0 = ExtResource("1_uweji")

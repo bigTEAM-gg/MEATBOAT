@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://8dk0qv8g8e1"]
+[gd_scene load_steps=5 format=3 uid="uid://8dk0qv8g8e1"]
+
+[ext_resource type="Material" uid="uid://vam38cu53tcv" path="res://assets/materials/FancyPillar/FancyPillarMat.tres" id="1_ejj6k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wuc8b"]
 resource_name = "lambert1"
@@ -43,3 +45,4 @@ shadow_mesh = SubResource("ArrayMesh_c6ykm")
 [node name="pillar_fancy" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_eytwe")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_ejj6k")

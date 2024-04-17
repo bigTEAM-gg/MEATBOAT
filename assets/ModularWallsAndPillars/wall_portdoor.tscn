@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkovkc6sqe5o3"]
+[gd_scene load_steps=5 format=3 uid="uid://bkovkc6sqe5o3"]
+
+[ext_resource type="Material" uid="uid://hgyvugjm7i0y" path="res://assets/materials/Wall/CoolToneWall.tres" id="1_ley6r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_veb05"]
 resource_name = "lambert1"
@@ -43,3 +45,4 @@ shadow_mesh = SubResource("ArrayMesh_y1eml")
 [node name="wall_portdoor" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_r4vhx")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_ley6r")

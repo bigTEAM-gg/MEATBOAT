@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://doef5ri6i7x8d"]
+
+[ext_resource type="Texture2D" uid="uid://b15po6md68clv" path="res://assets/materials/PortDoor/portdoor_portdoorMAT_BaseColor.png" id="1_n2uno"]
+[ext_resource type="Texture2D" uid="uid://dpbaujrcepm0s" path="res://assets/materials/PortDoor/portdoor_portdoorMAT_Metallic.png" id="2_whlcy"]
+[ext_resource type="Texture2D" uid="uid://b0kf1p3ysukk2" path="res://assets/materials/PortDoor/portdoor_portdoorMAT_Normal.png" id="3_t3bpo"]
+[ext_resource type="Texture2D" uid="uid://dvoi4rxk17714" path="res://assets/materials/PortDoor/portdoor_portdoorMAT_Roughness.png" id="4_3cgra"]
+
+[resource]
+albedo_texture = ExtResource("1_n2uno")
+metallic = 1.0
+metallic_texture = ExtResource("2_whlcy")
+roughness_texture = ExtResource("4_3cgra")
+normal_enabled = true
+normal_texture = ExtResource("3_t3bpo")
