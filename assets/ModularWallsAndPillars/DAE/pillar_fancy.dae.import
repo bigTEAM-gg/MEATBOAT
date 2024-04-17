@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bfsc7guhm2o8a"
-path="res://.godot/imported/portdoor.dae-cdb0efba8fc07c688056f92c59702a65.scn"
+uid="uid://b1bxa060s3pnl"
+path="res://.godot/imported/pillar_fancy.dae-1c25f4d34b883226af16786b4cae3573.scn"
 
 [deps]
 
-source_file="res://assets/ModularWallsAndPillars/portdoor.dae"
-dest_files=["res://.godot/imported/portdoor.dae-cdb0efba8fc07c688056f92c59702a65.scn"]
+source_file="res://assets/ModularWallsAndPillars/DAE/pillar_fancy.dae"
+dest_files=["res://.godot/imported/pillar_fancy.dae-1c25f4d34b883226af16786b4cae3573.scn"]
 
 [params]
 

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dd43t060xfhqv"
-path="res://.godot/imported/pillar_industrial.dae-51a479126b9c2205cbcbbd9e79542752.scn"
+uid="uid://bbion64m6gom"
+path="res://.godot/imported/wall_portdoor.dae-0dd3e7306a5244bd09dfbb9765212989.scn"
 
 [deps]
 
-source_file="res://assets/ModularWallsAndPillars/pillar_industrial.dae"
-dest_files=["res://.godot/imported/pillar_industrial.dae-51a479126b9c2205cbcbbd9e79542752.scn"]
+source_file="res://assets/ModularWallsAndPillars/DAE/wall_portdoor.dae"
+dest_files=["res://.godot/imported/wall_portdoor.dae-0dd3e7306a5244bd09dfbb9765212989.scn"]
 
 [params]
 

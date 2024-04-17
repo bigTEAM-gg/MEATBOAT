@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://6wt111dggrqj"
-path="res://.godot/imported/wall.dae-981709f3edadbfb0ee96060a408f9358.scn"
+uid="uid://w3dca2imbnic"
+path="res://.godot/imported/kitchendoors.dae-f5f8f24096142d9995fda82d1671b1b4.scn"
 
 [deps]
 
-source_file="res://assets/ModularWallsAndPillars/wall.dae"
-dest_files=["res://.godot/imported/wall.dae-981709f3edadbfb0ee96060a408f9358.scn"]
+source_file="res://assets/ModularWallsAndPillars/DAE/kitchendoors.dae"
+dest_files=["res://.godot/imported/kitchendoors.dae-f5f8f24096142d9995fda82d1671b1b4.scn"]
 
 [params]
 
