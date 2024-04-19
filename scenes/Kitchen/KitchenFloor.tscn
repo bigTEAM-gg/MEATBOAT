@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://2idp3xg1pl7e"]
+
+[ext_resource type="PackedScene" uid="uid://bmw2bh842ingy" path="res://scenes/ModularBuilding/floortile.tscn" id="1_u10yv"]
+
+[node name="KitchenFloor" type="Node3D"]
+
+[node name="floortile" parent="." instance=ExtResource("1_u10yv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010223, 0, 0.0377111)
+
+[node name="floortile2" parent="." instance=ExtResource("1_u10yv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010223, 0, 1.47012)
+
+[node name="floortile3" parent="." instance=ExtResource("1_u10yv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42074, 0, 1.47012)
+
+[node name="floortile4" parent="." instance=ExtResource("1_u10yv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42074, 0, 0.0396289)
