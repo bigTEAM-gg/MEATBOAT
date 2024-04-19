@@ -1,17 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://2idp3xg1pl7e"]
+[gd_scene load_steps=2 format=3 uid="uid://babqtiesllyei"]
 
-[ext_resource type="PackedScene" uid="uid://bmw2bh842ingy" path="res://scenes/ModularBuilding/floortile.tscn" id="1_u10yv"]
+[ext_resource type="PackedScene" uid="uid://b6sq05kxqhsn6" path="res://scenes/ModularBuilding/floortile.tscn" id="1_ms7cq"]
 
-[node name="KitchenFloor" type="Node3D"]
+[node name="Node3D" type="Node3D"]
 
-[node name="floortile" parent="." instance=ExtResource("1_u10yv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010223, 0, 0.0377111)
+[node name="floortile" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.034, 0, -2.068)
 
-[node name="floortile2" parent="." instance=ExtResource("1_u10yv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010223, 0, 1.47012)
+[node name="floortile" parent="floortile" instance=ExtResource("1_ms7cq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.034, 0, 2.068)
 
-[node name="floortile3" parent="." instance=ExtResource("1_u10yv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42074, 0, 1.47012)
-
-[node name="floortile4" parent="." instance=ExtResource("1_u10yv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42074, 0, 0.0396289)
+[node name="AnimationPlayer" type="AnimationPlayer" parent="floortile"]

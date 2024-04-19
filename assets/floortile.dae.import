@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bywea7sb2w8bg"
-path="res://.godot/imported/floortile.dae-85d20546eaa376a5678d6a7dfbc68ee1.scn"
+uid="uid://cdymn4hs4g7vy"
+path="res://.godot/imported/floortile.dae-cd912e351bc019c4f263036fb3294c89.scn"
 
 [deps]
 
-source_file="res://assets/ModularWallsAndPillars/floortile.dae"
-dest_files=["res://.godot/imported/floortile.dae-85d20546eaa376a5678d6a7dfbc68ee1.scn"]
+source_file="res://assets/floortile.dae"
+dest_files=["res://.godot/imported/floortile.dae-cd912e351bc019c4f263036fb3294c89.scn"]
 
 [params]
 
