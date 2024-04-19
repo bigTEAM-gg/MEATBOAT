@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce07oxoot8ynj"
-path="res://.godot/imported/RedCarpet_N.jpg-080157fc960f01cfd94fe2e6f895ea49.ctex"
+path="res://.godot/imported/RedCarpet_N.jpg-23c8aead40009868dbe05dc83054a3f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/materials/FloorTiles/RedCarpet_N.jpg"
-dest_files=["res://.godot/imported/RedCarpet_N.jpg-080157fc960f01cfd94fe2e6f895ea49.ctex"]
+source_file="res://assets/materials/FloorTiles/Carpet/RedCarpet_N.jpg"
+dest_files=["res://.godot/imported/RedCarpet_N.jpg-23c8aead40009868dbe05dc83054a3f7.ctex"]
 
 [params]
 
