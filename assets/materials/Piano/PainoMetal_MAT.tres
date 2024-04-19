@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dfuphy78ljwdh"]
+
+[ext_resource type="Texture2D" uid="uid://blcnxc37xb32m" path="res://assets/materials/Piano/piano_metal_mt_albedo.jpg" id="1_tjqtu"]
+[ext_resource type="Texture2D" uid="uid://dd1tebnho7188" path="res://assets/materials/Piano/piano_metal_mt_AO.jpg" id="2_6v0rd"]
+
+[resource]
+albedo_texture = ExtResource("1_tjqtu")
+metallic = 1.0
+metallic_texture = ExtResource("2_6v0rd")

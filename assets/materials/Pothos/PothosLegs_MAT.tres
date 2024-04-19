@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ccojwysjoxe4h"]
+
+[ext_resource type="Texture2D" uid="uid://djciso783u8f4" path="res://assets/materials/Pothos/POT02_WOODLEGS_Base_Color.png" id="1_iodol"]
+
+[resource]
+albedo_texture = ExtResource("1_iodol")

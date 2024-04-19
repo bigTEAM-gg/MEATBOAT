@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://rqg00c4h0p7s"]
+
+[ext_resource type="Texture2D" uid="uid://dv7hrd82brquh" path="res://assets/materials/Piano/piano_velvet_mt_albedo.jpg" id="1_3ktof"]
+
+[resource]
+albedo_texture = ExtResource("1_3ktof")

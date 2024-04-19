@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c3rhxmgscfqf7"]
+
+[ext_resource type="Texture2D" uid="uid://dob2wp2uvvuat" path="res://assets/materials/Monstera/Cube_1_Base_Color.png" id="1_kstxe"]
+
+[resource]
+albedo_texture = ExtResource("1_kstxe")

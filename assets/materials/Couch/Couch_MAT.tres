@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b7smgu5musvx6"]
+
+[ext_resource type="Texture2D" uid="uid://32ejx6ks4mtc" path="res://assets/materials/Couch/CouchMat_albedo.png" id="1_83qed"]
+
+[resource]
+albedo_texture = ExtResource("1_83qed")
