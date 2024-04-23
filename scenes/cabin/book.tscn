@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpdgca0ohdlrh"]
+
+[ext_resource type="PackedScene" uid="uid://1dkdxdiyq0r7" path="res://assets/Cabin/book.dae" id="1_74ghg"]
+[ext_resource type="Texture2D" uid="uid://d0wd8goy8h5s" path="res://assets/Cabin/book_diffuse.png" id="2_h3t02"]
+
+[sub_resource type="Shader" id="Shader_h6c7g"]
+code = "shader_type spatial;
+// https://godotshaders.com/shader/ps1-psx-model/
+//
+// affine_mapping: Normalizes the vertices if true.
+// albedo: Texture that will be used for this model.
+// alpha scissor: Threshold when the alpha value will be not rendered.
+// jitter: Amount of jitter that will be used. Higher values result in more jitter.
+// resolution: The screen resolution that will be used to apply the jitter
+
+render_mode blend_mix,
+	cull_disabled,
+	depth_prepass_alpha,
+	shadows_disabled,
+	specular_disabled,
+	vertex_lighting;
+
+uniform bool affine_mapping = false;
+uniform sampler2D albedo : source_color, filter_nearest;
+uniform float alpha_scissor : hint_range(0, 1) = 0.5;
+uniform float jitter: hint_range(0, 1) = 0.25;
+uniform ivec2 resolution = ivec2(320, 240);
+
+vec4 snap_to_position(vec4 base_position)
+{
+	vec4 snapped_position = base_position;
+	snapped_position.xyz = base_position.xyz / base_position.w;
+	
+	vec2 snap_resulotion = floor(vec2(resolution) * (1.0 - jitter));
+	snapped_position.x = floor(snap_resulotion.x * snapped_position.x) / snap_resulotion.x;
+	snapped_position.y = floor(snap_resulotion.y * snapped_position.y) / snap_resulotion.y;
+	
+	snapped_position.xyz *= base_position.w;
+	return snapped_position;
+}
+
+void vertex()
+{
+	vec4 snapped_position = snap_to_position(PROJECTION_MATRIX * MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	if (affine_mapping)
+	{
+		POSITION = snapped_position;
+		POSITION /= abs(POSITION.w);
+	}
+	else
+	{
+		POSITION = snapped_position;
+	}
+}
+
+void fragment()
+{
+	vec4 color_base = COLOR;
+	vec4 texture_color = texture(albedo, UV);
+
+	ALBEDO = (color_base * texture_color).rgb;
+	ALPHA = texture_color.a * color_base.a;
+	ALPHA_SCISSOR_THRESHOLD = alpha_scissor;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6dhyf"]
+render_priority = 0
+shader = SubResource("Shader_h6c7g")
+shader_parameter/affine_mapping = false
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(320, 240)
+shader_parameter/albedo = ExtResource("2_h3t02")
+
+[node name="book" instance=ExtResource("1_74ghg")]
+
+[node name="Book2" parent="." index="0"]
+material_override = SubResource("ShaderMaterial_6dhyf")

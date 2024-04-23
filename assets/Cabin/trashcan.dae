@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.6.0 commit date:2023-06-27, commit time:08:08, hash:c7fc78b81ecb</authoring_tool>
+    </contributor>
+    <created>2024-04-22T19:50:59</created>
+    <modified>2024-04-22T19:50:59</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="TrashCan-effect">
+      <profile_COMMON>
+        <newparam sid="Trashcan_Diffuse_png-surface">
+          <surface type="2D">
+            <init_from>Trashcan_Diffuse_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Trashcan_Diffuse_png-sampler">
+          <sampler2D>
+            <source>Trashcan_Diffuse_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Trashcan_Diffuse_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Trashcan_Diffuse_png" name="Trashcan_Diffuse_png">
+      <init_from>Trashcan_Diffuse.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="TrashCan-material" name="TrashCan">
+      <instance_effect url="#TrashCan-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cylinder_004-mesh" name="Cylinder.004">
+      <mesh>
+        <source id="Cylinder_004-mesh-positions">
+          <float_array id="Cylinder_004-mesh-positions-array" count="60">5.16406e-4 0.1601158 0.03278261 8.78936e-4 0.2725007 0.5290277 0.1389226 0.07961058 0.03278261 0.236432 0.1354891 0.5290277 0.138406 -0.08050525 0.03278261 0.2355529 -0.1370117 0.5290277 -5.16662e-4 -0.1601158 0.03278261 -8.79192e-4 -0.2725006 0.5290277 -0.1389226 -0.07961064 0.03278261 -0.2364322 -0.135489 0.5290277 -0.1384062 0.08050513 0.03278261 -0.2355531 0.1370116 0.5290277 5.16406e-4 0.1601158 3.83094e-4 0.1389226 0.07961058 3.83094e-4 0.138406 -0.08050525 3.83094e-4 -5.16662e-4 -0.1601158 3.83094e-4 -0.1389226 -0.07961064 3.83094e-4 -0.1384062 0.08050513 3.83094e-4 -1.73704e-7 0 3.83094e-4 -1.73704e-7 0 0.03058987</float_array>
+          <technique_common>
+            <accessor source="#Cylinder_004-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cylinder_004-mesh-normals">
+          <float_array id="Cylinder_004-mesh-normals-array" count="60">-0.7794615 -0.4466759 -0.4392272 -0.002556324 -0.7924018 -0.6099943 -0.002898275 -0.8983715 -0.4392271 0.003146052 0.9752964 -0.2208781 0.7794615 0.4466759 -0.4392272 0.002897679 0.8983713 -0.4392271 -0.7765637 0.4516952 -0.4392273 -0.6875181 -0.3939872 -0.6099944 0.8462045 0.4849235 -0.2208781 0.7765634 -0.4516956 -0.4392272 0.6875182 0.3939871 -0.6099943 -0.00314629 -0.9752964 -0.220878 -0.6849621 0.3984143 -0.6099944 0 0 -1 -0.8462046 -0.4849235 -0.2208782 0.6849619 -0.3984146 -0.6099943 -0.8430584 0.4903727 -0.2208782 0.002555847 0.7924018 -0.6099943 0 0 -1 0.8430582 -0.4903731 -0.2208781</float_array>
+          <technique_common>
+            <accessor source="#Cylinder_004-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cylinder_004-mesh-map-0">
+          <float_array id="Cylinder_004-mesh-map-0-array" count="216">0.343904 0.4861086 0.5019531 0.4861086 0.5019531 0.4861086 0.9636989 1.000561 0.8180513 0.4861086 0.9636989 0.4861086 0.1858548 0.4861086 0.343904 0.4861086 0.343904 0.4861086 0.8180513 1.000561 0.6600022 0.4861086 0.8180513 0.4861086 0.6600022 0.4861086 0.8180513 0.4861086 0.8180513 0.4861086 0.6600022 0.4861086 0.5019531 1.000561 0.5019531 0.4861086 0.08152824 0.3561058 0.2720748 0.2460938 0.08152824 0.1360816 0.5019531 1.000561 0.343904 0.4861086 0.5019531 0.4861086 0.02780574 0.4861086 0.1858548 0.4861086 0.1858548 0.4861086 0.343904 1.000561 0.1858548 0.4861086 0.343904 0.4861086 0.5019531 0.4861086 0.6600022 0.4861086 0.6600022 0.4861086 0.1858548 1.000561 0.02780574 0.4861086 0.1858548 0.4861086 0.8180513 0.4861086 0.9636989 0.4861086 0.9636989 0.4861086 0.08152824 0.1360816 0.2720748 0.2460938 0.2720747 0.02606964 0.2720747 0.02606964 0.2720748 0.2460938 0.4626212 0.1360816 0.4626212 0.1360816 0.2720748 0.2460938 0.4626212 0.3561058 0.4626212 0.3561058 0.2720748 0.2460938 0.2720747 0.4661179 0.2720747 0.4661179 0.2720748 0.2460938 0.08152824 0.3561058 0.5391446 0.3561058 0.7296912 0.2460938 0.5391446 0.1360816 0.5391446 0.1360816 0.7296912 0.2460938 0.729691 0.02606964 0.729691 0.02606964 0.7296912 0.2460938 0.9202375 0.1360816 0.9202375 0.1360816 0.7296912 0.2460938 0.9202375 0.3561058 0.9202375 0.3561058 0.7296912 0.2460938 0.729691 0.4661179 0.729691 0.4661179 0.7296912 0.2460938 0.5391446 0.3561058 0.343904 0.4861086 0.343904 0.4861086 0.5019531 0.4861086 0.9636989 1.000561 0.8180513 1.000561 0.8180513 0.4861086 0.1858548 0.4861086 0.1858548 0.4861086 0.343904 0.4861086 0.8180513 1.000561 0.6600022 1.000561 0.6600022 0.4861086 0.6600022 0.4861086 0.6600022 0.4861086 0.8180513 0.4861086 0.6600022 0.4861086 0.6600022 1.000561 0.5019531 1.000561 0.5019531 1.000561 0.343904 1.000561 0.343904 0.4861086 0.02780574 0.4861086 0.02780574 0.4861086 0.1858548 0.4861086 0.343904 1.000561 0.1858548 1.000561 0.1858548 0.4861086 0.5019531 0.4861086 0.5019531 0.4861086 0.6600022 0.4861086 0.1858548 1.000561 0.02780574 1.000561 0.02780574 0.4861086 0.8180513 0.4861086 0.8180513 0.4861086 0.9636989 0.4861086</float_array>
+          <technique_common>
+            <accessor source="#Cylinder_004-mesh-map-0-array" count="108" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cylinder_004-mesh-vertices">
+          <input semantic="POSITION" source="#Cylinder_004-mesh-positions"/>
+        </vertices>
+        <triangles material="TrashCan-material" count="36">
+          <input semantic="VERTEX" source="#Cylinder_004-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cylinder_004-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cylinder_004-mesh-map-0" offset="2" set="0"/>
+          <p>8 0 0 15 1 1 6 2 2 1 3 3 2 4 4 0 5 5 10 6 6 16 7 7 8 0 8 3 8 9 4 9 10 2 4 11 4 9 12 13 10 13 2 4 14 4 9 15 7 11 16 6 2 17 17 12 18 18 13 19 16 7 20 7 11 21 8 0 22 6 2 23 0 5 24 17 12 25 10 6 26 9 14 27 10 6 28 8 0 29 6 2 30 14 15 31 4 9 32 11 16 33 0 5 34 10 6 35 2 4 36 12 17 37 0 5 38 16 7 39 18 13 40 15 1 41 15 1 42 18 13 43 14 15 44 14 15 45 18 13 46 13 10 47 13 10 48 18 13 49 12 17 50 12 17 51 18 13 52 17 12 53 10 6 54 19 18 55 8 0 56 8 0 57 19 18 58 6 2 59 6 2 60 19 18 61 4 9 62 4 9 63 19 18 64 2 4 65 2 4 66 19 18 67 0 5 68 0 5 69 19 18 70 10 6 71 8 0 72 16 7 73 15 1 74 1 3 75 3 8 76 2 4 77 10 6 78 17 12 79 16 7 80 3 8 81 5 19 82 4 9 83 4 9 84 14 15 85 13 10 86 4 9 87 5 19 88 7 11 89 7 11 90 9 14 91 8 0 92 0 5 93 12 17 94 17 12 95 9 14 96 11 16 97 10 6 98 6 2 99 15 1 100 14 15 101 11 16 102 1 3 103 0 5 104 2 4 105 13 10 106 12 17 107</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Trashcan" name="Trashcan" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Cylinder_004-mesh" name="Trashcan">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="TrashCan-material" target="#TrashCan-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
