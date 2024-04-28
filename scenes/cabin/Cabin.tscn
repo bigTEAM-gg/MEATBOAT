@@ -1,0 +1,59 @@
+[gd_scene load_steps=11 format=3 uid="uid://dl47tx70xp0kq"]
+
+[ext_resource type="PackedScene" uid="uid://dnt2sov4042g8" path="res://scenes/cabin/bed.tscn" id="1_mfvj2"]
+[ext_resource type="PackedScene" uid="uid://cpdgca0ohdlrh" path="res://scenes/cabin/book.tscn" id="2_ackyp"]
+[ext_resource type="PackedScene" uid="uid://cfpdtdrsd16nx" path="res://scenes/cabin/lamp.tscn" id="3_65ivo"]
+[ext_resource type="PackedScene" uid="uid://cep1jyqxng1f" path="res://scenes/cabin/mug.tscn" id="4_6ny2h"]
+[ext_resource type="PackedScene" uid="uid://xt7dm5jrvqrn" path="res://scenes/cabin/trashcan.tscn" id="5_jbsmr"]
+[ext_resource type="PackedScene" uid="uid://csnsawrl1dice" path="res://scenes/Decorations/sidetable.tscn" id="6_ucnry"]
+[ext_resource type="PackedScene" uid="uid://bydjf3hu4e4bo" path="res://scenes/ModularBuilding/wall.tscn" id="7_g7yjl"]
+[ext_resource type="Material" uid="uid://hgyvugjm7i0y" path="res://assets/materials/Wall/CoolToneWall.tres" id="8_lqho7"]
+[ext_resource type="PackedScene" uid="uid://cth6imyva5ura" path="res://scenes/ModularBuilding/guestdoor.tscn" id="8_xmug6"]
+[ext_resource type="PackedScene" uid="uid://danbe1ccsh8dt" path="res://scenes/ModularBuilding/wall_door.tscn" id="9_725os"]
+
+[node name="Cabin" type="MeshInstance3D"]
+
+[node name="bed" parent="." instance=ExtResource("1_mfvj2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.968349, 0, -0.184321)
+
+[node name="book" parent="." instance=ExtResource("2_ackyp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78671, 0.797947, 1.11637)
+
+[node name="lamp" parent="." instance=ExtResource("3_65ivo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95114, 0.791965, 0.835475)
+
+[node name="mug" parent="." instance=ExtResource("4_6ny2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.68005, 0.821519, 0.784766)
+
+[node name="trashcan" parent="." instance=ExtResource("5_jbsmr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.97531, 0, 1.59244)
+
+[node name="sidetable" parent="." instance=ExtResource("6_ucnry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.86933, 0, 0.897754)
+
+[node name="wall4" parent="." instance=ExtResource("7_g7yjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.80752, 0, 0.0246414)
+surface_material_override/0 = ExtResource("8_lqho7")
+
+[node name="wall2" parent="." instance=ExtResource("7_g7yjl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.23504, 0, -0.956499)
+surface_material_override/0 = ExtResource("8_lqho7")
+
+[node name="wall5" parent="." instance=ExtResource("7_g7yjl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.78069, 0, -0.956499)
+surface_material_override/0 = ExtResource("8_lqho7")
+
+[node name="wall3" parent="." instance=ExtResource("7_g7yjl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.23504, 0, 3.05082)
+surface_material_override/0 = ExtResource("8_lqho7")
+
+[node name="wall6" parent="." instance=ExtResource("7_g7yjl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.78069, 0, 3.05082)
+surface_material_override/0 = ExtResource("8_lqho7")
+
+[node name="guestdoor" parent="." instance=ExtResource("8_xmug6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.76039, 0, 2.06672)
+
+[node name="wall_door" parent="." instance=ExtResource("9_725os")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.808, 0.007, 2.078)
+surface_material_override/0 = ExtResource("8_lqho7")

@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bsj5qtch5n7sh" path="res://environment/water.tscn" id="12_k1llt"]
 [ext_resource type="PackedScene" uid="uid://cfpdtdrsd16nx" path="res://scenes/cabin/lamp.tscn" id="13_kxsmu"]
 [ext_resource type="PackedScene" uid="uid://xt7dm5jrvqrn" path="res://scenes/cabin/trashcan.tscn" id="14_4d5g6"]
-[ext_resource type="PackedScene" uid="uid://cpdgca0ohdlrh" path="res://scenes/Cabin/book.tscn" id="14_gar63"]
+[ext_resource type="PackedScene" uid="uid://cpdgca0ohdlrh" path="res://scenes/cabin/book.tscn" id="14_gar63"]
 [ext_resource type="PackedScene" uid="uid://cep1jyqxng1f" path="res://scenes/cabin/mug.tscn" id="15_ywmky"]
 
 [sub_resource type="Environment" id="Environment_oiuje"]
