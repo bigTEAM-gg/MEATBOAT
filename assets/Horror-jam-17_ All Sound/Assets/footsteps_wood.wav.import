@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dypwg588o5u8l"
+path="res://.godot/imported/footsteps_wood.wav-9df9721d507b44b119d22d3586ad5748.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/footsteps_wood.wav"
+dest_files=["res://.godot/imported/footsteps_wood.wav-9df9721d507b44b119d22d3586ad5748.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

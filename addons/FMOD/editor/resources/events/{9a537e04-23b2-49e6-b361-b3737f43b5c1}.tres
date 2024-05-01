@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://duvg6ht4jq076"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Boss/music_meatboat_battle"
+guid = "{9a537e04-23b2-49e6-b361-b3737f43b5c1}"
+name = "music_meatboat_battle"

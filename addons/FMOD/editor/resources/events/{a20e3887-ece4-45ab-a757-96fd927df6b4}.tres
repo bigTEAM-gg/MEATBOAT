@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://kw4lowbbfju3"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Soundtrack/music_ongoingsoundtrack"
+guid = "{a20e3887-ece4-45ab-a757-96fd927df6b4}"
+name = "music_ongoingsoundtrack"

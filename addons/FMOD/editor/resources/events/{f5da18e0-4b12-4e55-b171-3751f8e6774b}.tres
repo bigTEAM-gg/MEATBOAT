@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://yt774mswfmow"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Interactables/Boiler/boiler_heartbeat"
+guid = "{f5da18e0-4b12-4e55-b171-3751f8e6774b}"
+name = "boiler_heartbeat"

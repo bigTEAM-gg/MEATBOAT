@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cta4gb5li21uk"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_outside"
+guid = "{54088711-4bfe-4901-a6d0-a3e5ad6a78b8}"
+name = "ambience_outside"

@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://bwpx5bfwy1ltc"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_antislip"
+guid = "{5f019c5a-c851-42c5-be74-488c87fe1b1f}"
+name = "footsteps_antislip"

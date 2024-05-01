@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://rpfnulvooq50"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Lounge/music_lounge_area"
+guid = "{c47236fc-9034-499a-9b0a-638460923601}"
+name = "music_lounge_area"

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b50ebrd1m5xcf"
+path="res://.godot/imported/door_lock_wood.wav-734b55997e60dc3b44a4bfdcafc3eb9d.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/door_lock_wood.wav"
+dest_files=["res://.godot/imported/door_lock_wood.wav-734b55997e60dc3b44a4bfdcafc3eb9d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

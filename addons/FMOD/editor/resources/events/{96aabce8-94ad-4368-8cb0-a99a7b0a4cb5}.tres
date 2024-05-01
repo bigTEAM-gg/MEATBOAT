@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://dglsit55riulf"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_tile"
+guid = "{96aabce8-94ad-4368-8cb0-a99a7b0a4cb5}"
+name = "footsteps_tile"

@@ -37,7 +37,7 @@ enabled=PackedStringArray("res://addons/FMOD/plugin.cfg")
 
 [fmod]
 
-settings/banks_path="res://fmod/Build/Desktop"
+settings/banks_path="res://assets/Horror-jam-17_ All Sound/Build/Desktop"
 settings/fmod_output_type=0
 settings/fmod_debug_flags=0
 settings/fmod_debug_mode=1

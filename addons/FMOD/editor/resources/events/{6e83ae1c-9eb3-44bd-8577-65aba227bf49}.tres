@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://dpgpdkqityxxq"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_squish"
+guid = "{6e83ae1c-9eb3-44bd-8577-65aba227bf49}"
+name = "footsteps_squish"

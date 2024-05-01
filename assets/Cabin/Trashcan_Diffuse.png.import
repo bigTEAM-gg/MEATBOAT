@@ -3,15 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6if6nuj4hnsq"
-path="res://.godot/imported/trashcan_diffuse.png-00337f1b2e27afb3a0bd8d4caefb5456.ctex"
+path.s3tc="res://.godot/imported/trashcan_diffuse.png-00337f1b2e27afb3a0bd8d4caefb5456.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Cabin/trashcan_diffuse.png"
-dest_files=["res://.godot/imported/trashcan_diffuse.png-00337f1b2e27afb3a0bd8d4caefb5456.ctex"]
+dest_files=["res://.godot/imported/trashcan_diffuse.png-00337f1b2e27afb3a0bd8d4caefb5456.s3tc.ctex"]
 
 [params]
 

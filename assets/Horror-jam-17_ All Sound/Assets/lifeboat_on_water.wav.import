@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bktcp1rjhdrkn"
+path="res://.godot/imported/lifeboat_on_water.wav-3076bd2578d7212262beed4eda0547c3.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/lifeboat_on_water.wav"
+dest_files=["res://.godot/imported/lifeboat_on_water.wav-3076bd2578d7212262beed4eda0547c3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

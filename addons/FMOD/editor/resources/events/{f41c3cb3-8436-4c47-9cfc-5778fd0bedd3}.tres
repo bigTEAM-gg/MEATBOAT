@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cxeqc2odr1qql"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/eldritchboat_tentacle_whip"
+guid = "{f41c3cb3-8436-4c47-9cfc-5778fd0bedd3}"
+name = "eldritchboat_tentacle_whip"

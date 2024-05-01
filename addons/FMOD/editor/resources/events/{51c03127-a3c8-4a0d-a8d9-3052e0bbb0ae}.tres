@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://dnanl1oux1oyk"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_stairs_metal"
+guid = "{51c03127-a3c8-4a0d-a8d9-3052e0bbb0ae}"
+name = "footsteps_stairs_metal"

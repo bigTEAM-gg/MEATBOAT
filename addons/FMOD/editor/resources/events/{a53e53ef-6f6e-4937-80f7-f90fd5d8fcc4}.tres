@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://bkjdeku5g7e2n"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Interactables/Bedroom/bedroom_alarm_stop_button"
+guid = "{a53e53ef-6f6e-4937-80f7-f90fd5d8fcc4}"
+name = "bedroom_alarm_stop_button"

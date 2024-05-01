@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bt3bkx2y12q0s"
+path="res://.godot/imported/ambience_room_rec.wav-d170f20b4304c326ed0debfd30366ac9.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/ambience_room_rec.wav"
+dest_files=["res://.godot/imported/ambience_room_rec.wav-d170f20b4304c326ed0debfd30366ac9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

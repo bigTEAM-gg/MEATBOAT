@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cmalr4spmfvf"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Metal/door_open_metal"
+guid = "{89541d6a-8ea7-4a4e-b8f6-1209949cd0d8}"
+name = "door_open_metal"

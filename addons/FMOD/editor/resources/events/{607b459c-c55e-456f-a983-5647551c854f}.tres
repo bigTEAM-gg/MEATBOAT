@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://70jxr1q6s26q"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_kitchen_refrigerator"
+guid = "{607b459c-c55e-456f-a983-5647551c854f}"
+name = "ambience_kitchen_refrigerator"

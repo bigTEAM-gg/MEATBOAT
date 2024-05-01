@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://btdwwh1dluj8t"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Wood/door_close_wood"
+guid = "{ca90e9ed-dff5-426e-8af8-1b290684b76c}"
+name = "door_close_wood"

@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://b5evuwtkh6s5b"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_room_pool_deck"
+guid = "{072b73db-672d-42e7-a26d-4b02d41add64}"
+name = "ambience_room_pool_deck"

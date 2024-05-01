@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://buswx3074ye7j"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Movement/player_fall"
+guid = "{68cc36c5-b4c2-4211-b490-9130aa6453a5}"
+name = "player_fall"

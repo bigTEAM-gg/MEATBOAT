@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cj016ukacd2o6"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Interactables/Bedroom/bedroom_alarm_ongoing"
+guid = "{b4d65f3b-e4a3-43aa-a65a-712bfd0c023a}"
+name = "bedroom_alarm_ongoing"

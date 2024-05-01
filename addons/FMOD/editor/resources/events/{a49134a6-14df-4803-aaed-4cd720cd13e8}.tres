@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://c7eo3b4xvb4tn"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Inflict/player_pain2"
+guid = "{a49134a6-14df-4803-aaed-4cd720cd13e8}"
+name = "player_pain2"
