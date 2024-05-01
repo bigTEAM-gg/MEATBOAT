@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7q4r74dit3rc"
+path="res://.godot/imported/bedroom_alarm_ongoing.wav-bfd4edc55971cc2e38e3a5fc4e8a2bec.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/bedroom_alarm_ongoing.wav"
+dest_files=["res://.godot/imported/bedroom_alarm_ongoing.wav-bfd4edc55971cc2e38e3a5fc4e8a2bec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

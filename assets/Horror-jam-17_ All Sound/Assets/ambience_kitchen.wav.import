@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dd2as1wsc42b4"
+path="res://.godot/imported/ambience_kitchen.wav-242428501b236484df46660109919ae3.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/ambience_kitchen.wav"
+dest_files=["res://.godot/imported/ambience_kitchen.wav-242428501b236484df46660109919ae3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

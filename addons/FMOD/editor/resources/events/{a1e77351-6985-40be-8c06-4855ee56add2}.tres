@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://hu640khr5xda"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Soundscape/ambience_room_boiler"
+guid = "{a1e77351-6985-40be-8c06-4855ee56add2}"
+name = "ambience_room_boiler"

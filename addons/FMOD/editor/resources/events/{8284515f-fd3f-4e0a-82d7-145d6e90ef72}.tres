@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cpx6qp87dybmo"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Movement/player_shuffle_out_of_bed"
+guid = "{8284515f-fd3f-4e0a-82d7-145d6e90ef72}"
+name = "player_shuffle_out_of_bed"

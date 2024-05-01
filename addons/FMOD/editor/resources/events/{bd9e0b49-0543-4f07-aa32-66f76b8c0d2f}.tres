@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://b6wju8glyrx65"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/UI/menu_toggle"
+guid = "{bd9e0b49-0543-4f07-aa32-66f76b8c0d2f}"
+name = "menu_toggle"

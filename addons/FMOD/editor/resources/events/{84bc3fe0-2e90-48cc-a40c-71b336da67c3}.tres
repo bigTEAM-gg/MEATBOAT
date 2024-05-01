@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://qxr7h3txf7j7"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Pipes/soundscape_boiler_metal_pipes_ongoing"
+guid = "{84bc3fe0-2e90-48cc-a40c-71b336da67c3}"
+name = "soundscape_boiler_metal_pipes_ongoing"

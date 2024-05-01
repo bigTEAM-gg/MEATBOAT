@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://ca3h0r6hpsxgx"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/UI/object_appearing"
+guid = "{73d5e4b8-3da4-43ce-8fc9-21a3b0321c41}"
+name = "object_appearing"

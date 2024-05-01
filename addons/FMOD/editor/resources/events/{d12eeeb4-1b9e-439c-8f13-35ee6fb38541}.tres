@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://dm2iis32wbxku"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Machinery/boiler_engine"
+guid = "{d12eeeb4-1b9e-439c-8f13-35ee6fb38541}"
+name = "boiler_engine"

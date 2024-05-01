@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://c8dawkffslerf"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Movement/player_uniform_on"
+guid = "{cd167aa6-a257-4e0f-80d7-ceb1a553adf9}"
+name = "player_uniform_on"

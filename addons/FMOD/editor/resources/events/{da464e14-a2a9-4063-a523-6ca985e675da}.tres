@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://btx6qgnnbdd81"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_wood"
+guid = "{da464e14-a2a9-4063-a523-6ca985e675da}"
+name = "footsteps_wood"

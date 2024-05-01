@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://d1okvatewbie3"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_refrigerator_walk-in"
+guid = "{2fb409d9-e0c2-4dde-ae10-4b35dd68d08d}"
+name = "ambience_refrigerator_walk-in"

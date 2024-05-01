@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://closjyxrf4csf"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Titlescreen/music_titlescreen"
+guid = "{e95a23c3-424f-4681-9ad4-c04719179e26}"
+name = "music_titlescreen"

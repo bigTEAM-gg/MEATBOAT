@@ -1,0 +1,8 @@
+[gd_resource type="BankAsset" format=3 uid="uid://74m6pjhd4fhx"]
+
+[resource]
+file_path = "res://assets/Horror-jam-17_ All Sound/Build/Desktop/Master.strings.bank"
+modified_time = 1714533006
+path = "bank:/Master.strings"
+guid = "{f68c9e85-7436-0e8e-1dbe-a51f54adc43e}"
+name = "Master.strings"

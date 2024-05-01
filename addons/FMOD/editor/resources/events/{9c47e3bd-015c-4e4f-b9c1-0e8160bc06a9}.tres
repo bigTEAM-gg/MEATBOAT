@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://dkkt7uyhyud1x"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/crewmate_movement_far"
+guid = "{9c47e3bd-015c-4e4f-b9c1-0e8160bc06a9}"
+name = "crewmate_movement_far"

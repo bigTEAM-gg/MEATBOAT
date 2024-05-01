@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://dqif5rivibly4"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_kitchen_waterleak"
+guid = "{a5aaa66c-637b-46b5-9940-32a99af4e1cf}"
+name = "ambience_kitchen_waterleak"

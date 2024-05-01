@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cx8ocftigkrv4"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Receive/player_hitnoise3"
+guid = "{c76b3e01-bb64-4d84-804c-0c8efe38ad7b}"
+name = "player_hitnoise3"

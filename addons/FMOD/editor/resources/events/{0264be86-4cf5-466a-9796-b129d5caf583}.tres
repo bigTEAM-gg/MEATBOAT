@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://kmu5ulkrwm1s"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_heartbeat_overarching"
+guid = "{0264be86-4cf5-466a-9796-b129d5caf583}"
+name = "ambience_heartbeat_overarching"

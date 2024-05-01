@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cixkr4xpabi7h"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/UI/menu_click"
+guid = "{f5f6b511-dd0c-4a1a-8f34-96744d686e7b}"
+name = "menu_click"

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://do3527ie86uri"
+path="res://.godot/imported/footstep_squish.wav-7603b78b92b74875ce42bd8e888b613a.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/footstep_squish.wav"
+dest_files=["res://.godot/imported/footstep_squish.wav-7603b78b92b74875ce42bd8e888b613a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

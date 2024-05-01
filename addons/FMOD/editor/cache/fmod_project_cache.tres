@@ -1,42 +1,1091 @@
-[gd_resource type="ProjectCache" load_steps=6 format=3 uid="uid://cuobxfdeki2lt"]
+[gd_resource type="ProjectCache" load_steps=64 format=3 uid="uid://cuobxfdeki2lt"]
 
-[ext_resource type="BankAsset" uid="uid://foj1d3t6f4tr" path="res://addons/FMOD/editor/resources/banks/{8ba98baf-4510-43bb-a5a6-4efe99b936f5}.tres" id="1_nghme"]
-[ext_resource type="BankAsset" uid="uid://drpi6uruuxyc3" path="res://addons/FMOD/editor/resources/banks/{13b4ab7b-346b-0ff9-23ef-c400684a306d}.tres" id="2_131px"]
-[ext_resource type="BusAsset" uid="uid://cyuc3mwt608um" path="res://addons/FMOD/editor/resources/busses/{850171b4-b5d7-45e3-90b0-fa7862432c34}.tres" id="3_m35jl"]
-[ext_resource type="BusAsset" uid="uid://dht8fm2eqpqve" path="res://addons/FMOD/editor/resources/busses/{13c8e4b9-a999-4a03-8059-99db4fd169ec}.tres" id="4_0you0"]
-[ext_resource type="EventAsset" uid="uid://cafe8nusrjypn" path="res://addons/FMOD/editor/resources/events/{8b140bca-f256-4511-b1c9-8f27b280a60c}.tres" id="5_grhf3"]
+[ext_resource type="BankAsset" uid="uid://bwarwhc4km3pu" path="res://addons/FMOD/editor/resources/banks/{6e91be51-054d-42cc-9bf7-2fe1a55ec2a6}.tres" id="1_wl301"]
+[ext_resource type="BankAsset" uid="uid://74m6pjhd4fhx" path="res://addons/FMOD/editor/resources/banks/{f68c9e85-7436-0e8e-1dbe-a51f54adc43e}.tres" id="2_fc6cm"]
+[ext_resource type="BusAsset" uid="uid://bqu5mxo0587aw" path="res://addons/FMOD/editor/resources/busses/{7fa1f925-092b-4743-ac0d-11bac83b2aa6}.tres" id="3_x0ujo"]
+[ext_resource type="BusAsset" uid="uid://0g5orl25w8jq" path="res://addons/FMOD/editor/resources/busses/{b5dae493-8e20-4b1d-b99f-791c401709c8}.tres" id="4_eqxqk"]
+
+[sub_resource type="EventAsset" id="EventAsset_7e76n"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_heartbeat_overarching"
+guid = "{0264be86-4cf5-466a-9796-b129d5caf583}"
+name = "ambience_heartbeat_overarching"
+
+[sub_resource type="EventAsset" id="EventAsset_dv6td"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_kitchen"
+guid = "{09a3e382-e964-4265-9d8b-dbe4132a77c1}"
+name = "ambience_kitchen"
+
+[sub_resource type="EventAsset" id="EventAsset_v7kvg"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_kitchen_refrigerator"
+guid = "{607b459c-c55e-456f-a983-5647551c854f}"
+name = "ambience_kitchen_refrigerator"
+
+[sub_resource type="EventAsset" id="EventAsset_bnfwy"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_kitchen_waterleak"
+guid = "{a5aaa66c-637b-46b5-9940-32a99af4e1cf}"
+name = "ambience_kitchen_waterleak"
+
+[sub_resource type="EventAsset" id="EventAsset_vmy55"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_outside"
+guid = "{54088711-4bfe-4901-a6d0-a3e5ad6a78b8}"
+name = "ambience_outside"
+
+[sub_resource type="EventAsset" id="EventAsset_3imn7"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_refrigerator_walk-in"
+guid = "{2fb409d9-e0c2-4dde-ae10-4b35dd68d08d}"
+name = "ambience_refrigerator_walk-in"
+
+[sub_resource type="EventAsset" id="EventAsset_jolx0"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_room_bedroom"
+guid = "{0b78e2c2-2074-41f1-a375-da1ea30c400c}"
+name = "ambience_room_bedroom"
+
+[sub_resource type="EventAsset" id="EventAsset_qgks3"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_room_pool_deck"
+guid = "{072b73db-672d-42e7-a26d-4b02d41add64}"
+name = "ambience_room_pool_deck"
+
+[sub_resource type="EventAsset" id="EventAsset_g83hw"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_room_rec"
+guid = "{ccdf3109-2da5-4761-9fe3-465709b870a6}"
+name = "ambience_room_rec"
+
+[sub_resource type="EventAsset" id="EventAsset_sfecw"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_staircase"
+guid = "{c25b9492-0db0-43c8-863a-cab3986e663b}"
+name = "ambience_staircase"
+
+[sub_resource type="EventAsset" id="EventAsset_dww2l"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Metal/door_close_metal"
+guid = "{ccf197bd-fb19-4f89-9fec-2320c08377a8}"
+name = "door_close_metal"
+
+[sub_resource type="EventAsset" id="EventAsset_7m05u"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Metal/door_lock_metal"
+guid = "{34087c99-f06d-4ac9-a13a-446f32961a25}"
+name = "door_lock_metal"
+
+[sub_resource type="EventAsset" id="EventAsset_ev7i7"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Metal/door_open_metal"
+guid = "{89541d6a-8ea7-4a4e-b8f6-1209949cd0d8}"
+name = "door_open_metal"
+
+[sub_resource type="EventAsset" id="EventAsset_lm7m2"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Wood/door_close_wood"
+guid = "{ca90e9ed-dff5-426e-8af8-1b290684b76c}"
+name = "door_close_wood"
+
+[sub_resource type="EventAsset" id="EventAsset_y4i71"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Wood/door_lock_wood"
+guid = "{5a1d8550-915a-455c-bec9-cd1b104dadfa}"
+name = "door_lock_wood"
+
+[sub_resource type="EventAsset" id="EventAsset_g8563"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Doors/Wood/door_open_wood"
+guid = "{c9b2ca98-8b12-405b-a2a0-ded9216be831}"
+name = "door_open_wood"
+
+[sub_resource type="EventAsset" id="EventAsset_yui4g"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_antislip"
+guid = "{5f019c5a-c851-42c5-be74-488c87fe1b1f}"
+name = "footsteps_antislip"
+
+[sub_resource type="EventAsset" id="EventAsset_moo4a"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_carpet"
+guid = "{b830cdcf-9b80-4322-b6e7-f50346ed119a}"
+name = "footsteps_carpet"
+
+[sub_resource type="EventAsset" id="EventAsset_8vwi2"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_squish"
+guid = "{6e83ae1c-9eb3-44bd-8577-65aba227bf49}"
+name = "footsteps_squish"
+
+[sub_resource type="EventAsset" id="EventAsset_lhdjn"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_stairs_metal"
+guid = "{51c03127-a3c8-4a0d-a8d9-3052e0bbb0ae}"
+name = "footsteps_stairs_metal"
+
+[sub_resource type="EventAsset" id="EventAsset_0a7je"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_stairs_wood"
+guid = "{a2b4bfec-2bfd-4fb7-bfef-9ab4ed429799}"
+name = "footsteps_stairs_wood"
+
+[sub_resource type="EventAsset" id="EventAsset_sar6k"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_tile"
+guid = "{96aabce8-94ad-4368-8cb0-a99a7b0a4cb5}"
+name = "footsteps_tile"
+
+[sub_resource type="EventAsset" id="EventAsset_rogld"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Footsteps/footsteps_wood"
+guid = "{da464e14-a2a9-4063-a523-6ca985e675da}"
+name = "footsteps_wood"
+
+[sub_resource type="EventAsset" id="EventAsset_4xrof"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Movement/player_fall"
+guid = "{68cc36c5-b4c2-4211-b490-9130aa6453a5}"
+name = "player_fall"
+
+[sub_resource type="EventAsset" id="EventAsset_xqnka"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Movement/player_shuffle_out_of_bed"
+guid = "{8284515f-fd3f-4e0a-82d7-145d6e90ef72}"
+name = "player_shuffle_out_of_bed"
+
+[sub_resource type="EventAsset" id="EventAsset_2hou8"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Movement/player_uniform_off"
+guid = "{55053f08-b24e-4054-b1a4-e0b775a8a555}"
+name = "player_uniform_off"
+
+[sub_resource type="EventAsset" id="EventAsset_sgs8q"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Character/Movement/player_uniform_on"
+guid = "{cd167aa6-a257-4e0f-80d7-ceb1a553adf9}"
+name = "player_uniform_on"
+
+[sub_resource type="EventAsset" id="EventAsset_oxpxs"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Interactables/Bedroom/bedroom_alarm_ongoing"
+guid = "{b4d65f3b-e4a3-43aa-a65a-712bfd0c023a}"
+name = "bedroom_alarm_ongoing"
+
+[sub_resource type="EventAsset" id="EventAsset_d1nyr"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Interactables/Bedroom/bedroom_alarm_stop_button"
+guid = "{a53e53ef-6f6e-4937-80f7-f90fd5d8fcc4}"
+name = "bedroom_alarm_stop_button"
+
+[sub_resource type="EventAsset" id="EventAsset_kqo3h"]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Interactables/Boiler/boiler_heartbeat"
+guid = "{f5da18e0-4b12-4e55-b171-3751f8e6774b}"
+name = "boiler_heartbeat"
+
+[sub_resource type="EventAsset" id="EventAsset_dxnrc"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/UI/menu_click"
+guid = "{f5f6b511-dd0c-4a1a-8f34-96744d686e7b}"
+name = "menu_click"
+
+[sub_resource type="EventAsset" id="EventAsset_thebc"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/UI/menu_toggle"
+guid = "{bd9e0b49-0543-4f07-aa32-66f76b8c0d2f}"
+name = "menu_toggle"
+
+[sub_resource type="EventAsset" id="EventAsset_n4en0"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/UI/object_appearing"
+guid = "{73d5e4b8-3da4-43ce-8fc9-21a3b0321c41}"
+name = "object_appearing"
+
+[sub_resource type="EventAsset" id="EventAsset_mhwfx"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Machinery/boiler_engine"
+guid = "{d12eeeb4-1b9e-439c-8f13-35ee6fb38541}"
+name = "boiler_engine"
+
+[sub_resource type="EventAsset" id="EventAsset_y305u"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Pipes/soundscape_boiler_metal_pipes_loud"
+guid = "{8549e19d-13a5-448e-8079-87bc70b90a80}"
+name = "soundscape_boiler_metal_pipes_loud"
+
+[sub_resource type="EventAsset" id="EventAsset_opcrk"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Pipes/soundscape_boiler_metal_pipes_ongoing"
+guid = "{84bc3fe0-2e90-48cc-a40c-71b336da67c3}"
+name = "soundscape_boiler_metal_pipes_ongoing"
+
+[sub_resource type="EventAsset" id="EventAsset_tsfq4"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Soundscape/ambience_room_boiler"
+guid = "{a1e77351-6985-40be-8c06-4855ee56add2}"
+name = "ambience_room_boiler"
+
+[sub_resource type="EventAsset" id="EventAsset_d5hdu"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Boiler/Soundscape/soundscape_boiler"
+guid = "{653cc070-44a0-4e3b-b7f8-d41b999e49db}"
+name = "soundscape_boiler"
+
+[sub_resource type="EventAsset" id="EventAsset_witb0"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/crewmate_movement_close"
+guid = "{6fbb7373-8dc0-4678-adfd-5fd3ce004b2c}"
+name = "crewmate_movement_close"
+
+[sub_resource type="EventAsset" id="EventAsset_rujfa"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/crewmate_movement_far"
+guid = "{9c47e3bd-015c-4e4f-b9c1-0e8160bc06a9}"
+name = "crewmate_movement_far"
+
+[sub_resource type="EventAsset" id="EventAsset_3tvbn"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/eldritchboat_movement_close"
+guid = "{f606dc26-7ea5-4b55-a9b3-5d673992951c}"
+name = "eldritchboat_movement_close"
+
+[sub_resource type="EventAsset" id="EventAsset_5utv0"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/eldritchboat_movement_far"
+guid = "{bfaab3b0-5fe1-4df2-9a20-032961eb832c}"
+name = "eldritchboat_movement_far"
+
+[sub_resource type="EventAsset" id="EventAsset_btwtp"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/eldritchboat_tentacle_overarching"
+guid = "{b1bb41d3-49f4-4047-86cb-a130bd74dff1}"
+name = "eldritchboat_tentacle_overarching"
+
+[sub_resource type="EventAsset" id="EventAsset_jc5er"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/eldritchboat_tentacle_whip"
+guid = "{f41c3cb3-8436-4c47-9cfc-5778fd0bedd3}"
+name = "eldritchboat_tentacle_whip"
+
+[sub_resource type="EventAsset" id="EventAsset_f7k44"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Inflict/player_pain1"
+guid = "{fab158c3-6aee-4a27-b6f4-8ce01ea523b8}"
+name = "player_pain1"
+
+[sub_resource type="EventAsset" id="EventAsset_unflt"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Inflict/player_pain2"
+guid = "{a49134a6-14df-4803-aaed-4cd720cd13e8}"
+name = "player_pain2"
+
+[sub_resource type="EventAsset" id="EventAsset_8umid"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Inflict/player_pain3"
+guid = "{d05e2314-f632-4d55-9c93-847a900a257e}"
+name = "player_pain3"
+
+[sub_resource type="EventAsset" id="EventAsset_ai6ri"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Receive/player_hitnoise1"
+guid = "{56e55972-99e3-4a9e-908b-c0bd5c597a94}"
+name = "player_hitnoise1"
+
+[sub_resource type="EventAsset" id="EventAsset_chcf1"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Receive/player_hitnoise2"
+guid = "{15151cd7-3139-45b7-b171-1bcb8e30c21a}"
+name = "player_hitnoise2"
+
+[sub_resource type="EventAsset" id="EventAsset_p0ce7"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Fight/Receive/player_hitnoise3"
+guid = "{c76b3e01-bb64-4d84-804c-0c8efe38ad7b}"
+name = "player_hitnoise3"
+
+[sub_resource type="EventAsset" id="EventAsset_k4ynw"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Boss/music_meatboat_battle"
+guid = "{9a537e04-23b2-49e6-b361-b3737f43b5c1}"
+name = "music_meatboat_battle"
+
+[sub_resource type="EventAsset" id="EventAsset_qwk8j"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Boss/music_meatboat_final_fight"
+guid = "{a555c261-973f-41c0-9980-46c23853b2df}"
+name = "music_meatboat_final_fight"
+
+[sub_resource type="EventAsset" id="EventAsset_pa51k"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Boss/music_meatboat_lose"
+guid = "{58aa7b9e-ddd6-4eaa-9e55-f2be6099fead}"
+name = "music_meatboat_lose"
+
+[sub_resource type="EventAsset" id="EventAsset_x1a4f"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Boss/music_meatboat_win"
+guid = "{e5125984-dc79-45aa-9424-e1f1b4e741d7}"
+name = "music_meatboat_win"
+
+[sub_resource type="EventAsset" id="EventAsset_lps8i"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Lounge/music_lounge_area"
+guid = "{c47236fc-9034-499a-9b0a-638460923601}"
+name = "music_lounge_area"
+
+[sub_resource type="EventAsset" id="EventAsset_2gnjv"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Soundtrack/music_ongoingsoundtrack"
+guid = "{a20e3887-ece4-45ab-a757-96fd927df6b4}"
+name = "music_ongoingsoundtrack"
+
+[sub_resource type="EventAsset" id="EventAsset_stour"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Music/Titlescreen/music_titlescreen"
+guid = "{e95a23c3-424f-4681-9ad4-c04719179e26}"
+name = "music_titlescreen"
+
+[sub_resource type="EventAsset" id="EventAsset_u228m"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Vehicles/lifeboat_inflation_process"
+guid = "{4af0579b-f472-4d60-bb61-f68fcaf2e7c6}"
+name = "lifeboat_inflation_process"
+
+[sub_resource type="EventAsset" id="EventAsset_tqkpv"]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Vehicles/lifeboat_on_water"
+guid = "{d66ed51a-3fee-4d4e-94ea-bdd1c3aef5fe}"
+name = "lifeboat_on_water"
 
 [resource]
 banks = {
-"{13b4ab7b-346b-0ff9-23ef-c400684a306d}": ExtResource("2_131px"),
-"{8ba98baf-4510-43bb-a5a6-4efe99b936f5}": ExtResource("1_nghme")
+"{6e91be51-054d-42cc-9bf7-2fe1a55ec2a6}": ExtResource("1_wl301"),
+"{f68c9e85-7436-0e8e-1dbe-a51f54adc43e}": ExtResource("2_fc6cm")
 }
 events = {
-"{8b140bca-f256-4511-b1c9-8f27b280a60c}": ExtResource("5_grhf3")
+"{0264be86-4cf5-466a-9796-b129d5caf583}": SubResource("EventAsset_7e76n"),
+"{072b73db-672d-42e7-a26d-4b02d41add64}": SubResource("EventAsset_qgks3"),
+"{09a3e382-e964-4265-9d8b-dbe4132a77c1}": SubResource("EventAsset_dv6td"),
+"{0b78e2c2-2074-41f1-a375-da1ea30c400c}": SubResource("EventAsset_jolx0"),
+"{15151cd7-3139-45b7-b171-1bcb8e30c21a}": SubResource("EventAsset_chcf1"),
+"{2fb409d9-e0c2-4dde-ae10-4b35dd68d08d}": SubResource("EventAsset_3imn7"),
+"{34087c99-f06d-4ac9-a13a-446f32961a25}": SubResource("EventAsset_7m05u"),
+"{4af0579b-f472-4d60-bb61-f68fcaf2e7c6}": SubResource("EventAsset_u228m"),
+"{51c03127-a3c8-4a0d-a8d9-3052e0bbb0ae}": SubResource("EventAsset_lhdjn"),
+"{54088711-4bfe-4901-a6d0-a3e5ad6a78b8}": SubResource("EventAsset_vmy55"),
+"{55053f08-b24e-4054-b1a4-e0b775a8a555}": SubResource("EventAsset_2hou8"),
+"{56e55972-99e3-4a9e-908b-c0bd5c597a94}": SubResource("EventAsset_ai6ri"),
+"{58aa7b9e-ddd6-4eaa-9e55-f2be6099fead}": SubResource("EventAsset_pa51k"),
+"{5a1d8550-915a-455c-bec9-cd1b104dadfa}": SubResource("EventAsset_y4i71"),
+"{5f019c5a-c851-42c5-be74-488c87fe1b1f}": SubResource("EventAsset_yui4g"),
+"{607b459c-c55e-456f-a983-5647551c854f}": SubResource("EventAsset_v7kvg"),
+"{653cc070-44a0-4e3b-b7f8-d41b999e49db}": SubResource("EventAsset_d5hdu"),
+"{68cc36c5-b4c2-4211-b490-9130aa6453a5}": SubResource("EventAsset_4xrof"),
+"{6e83ae1c-9eb3-44bd-8577-65aba227bf49}": SubResource("EventAsset_8vwi2"),
+"{6fbb7373-8dc0-4678-adfd-5fd3ce004b2c}": SubResource("EventAsset_witb0"),
+"{73d5e4b8-3da4-43ce-8fc9-21a3b0321c41}": SubResource("EventAsset_n4en0"),
+"{8284515f-fd3f-4e0a-82d7-145d6e90ef72}": SubResource("EventAsset_xqnka"),
+"{84bc3fe0-2e90-48cc-a40c-71b336da67c3}": SubResource("EventAsset_opcrk"),
+"{8549e19d-13a5-448e-8079-87bc70b90a80}": SubResource("EventAsset_y305u"),
+"{89541d6a-8ea7-4a4e-b8f6-1209949cd0d8}": SubResource("EventAsset_ev7i7"),
+"{96aabce8-94ad-4368-8cb0-a99a7b0a4cb5}": SubResource("EventAsset_sar6k"),
+"{9a537e04-23b2-49e6-b361-b3737f43b5c1}": SubResource("EventAsset_k4ynw"),
+"{9c47e3bd-015c-4e4f-b9c1-0e8160bc06a9}": SubResource("EventAsset_rujfa"),
+"{a1e77351-6985-40be-8c06-4855ee56add2}": SubResource("EventAsset_tsfq4"),
+"{a20e3887-ece4-45ab-a757-96fd927df6b4}": SubResource("EventAsset_2gnjv"),
+"{a2b4bfec-2bfd-4fb7-bfef-9ab4ed429799}": SubResource("EventAsset_0a7je"),
+"{a49134a6-14df-4803-aaed-4cd720cd13e8}": SubResource("EventAsset_unflt"),
+"{a53e53ef-6f6e-4937-80f7-f90fd5d8fcc4}": SubResource("EventAsset_d1nyr"),
+"{a555c261-973f-41c0-9980-46c23853b2df}": SubResource("EventAsset_qwk8j"),
+"{a5aaa66c-637b-46b5-9940-32a99af4e1cf}": SubResource("EventAsset_bnfwy"),
+"{b1bb41d3-49f4-4047-86cb-a130bd74dff1}": SubResource("EventAsset_btwtp"),
+"{b4d65f3b-e4a3-43aa-a65a-712bfd0c023a}": SubResource("EventAsset_oxpxs"),
+"{b830cdcf-9b80-4322-b6e7-f50346ed119a}": SubResource("EventAsset_moo4a"),
+"{bd9e0b49-0543-4f07-aa32-66f76b8c0d2f}": SubResource("EventAsset_thebc"),
+"{bfaab3b0-5fe1-4df2-9a20-032961eb832c}": SubResource("EventAsset_5utv0"),
+"{c25b9492-0db0-43c8-863a-cab3986e663b}": SubResource("EventAsset_sfecw"),
+"{c47236fc-9034-499a-9b0a-638460923601}": SubResource("EventAsset_lps8i"),
+"{c76b3e01-bb64-4d84-804c-0c8efe38ad7b}": SubResource("EventAsset_p0ce7"),
+"{c9b2ca98-8b12-405b-a2a0-ded9216be831}": SubResource("EventAsset_g8563"),
+"{ca90e9ed-dff5-426e-8af8-1b290684b76c}": SubResource("EventAsset_lm7m2"),
+"{ccdf3109-2da5-4761-9fe3-465709b870a6}": SubResource("EventAsset_g83hw"),
+"{ccf197bd-fb19-4f89-9fec-2320c08377a8}": SubResource("EventAsset_dww2l"),
+"{cd167aa6-a257-4e0f-80d7-ceb1a553adf9}": SubResource("EventAsset_sgs8q"),
+"{d05e2314-f632-4d55-9c93-847a900a257e}": SubResource("EventAsset_8umid"),
+"{d12eeeb4-1b9e-439c-8f13-35ee6fb38541}": SubResource("EventAsset_mhwfx"),
+"{d66ed51a-3fee-4d4e-94ea-bdd1c3aef5fe}": SubResource("EventAsset_tqkpv"),
+"{da464e14-a2a9-4063-a523-6ca985e675da}": SubResource("EventAsset_rogld"),
+"{e5125984-dc79-45aa-9424-e1f1b4e741d7}": SubResource("EventAsset_x1a4f"),
+"{e95a23c3-424f-4681-9ad4-c04719179e26}": SubResource("EventAsset_stour"),
+"{f41c3cb3-8436-4c47-9cfc-5778fd0bedd3}": SubResource("EventAsset_jc5er"),
+"{f5da18e0-4b12-4e55-b171-3751f8e6774b}": SubResource("EventAsset_kqo3h"),
+"{f5f6b511-dd0c-4a1a-8f34-96744d686e7b}": SubResource("EventAsset_dxnrc"),
+"{f606dc26-7ea5-4b55-a9b3-5d673992951c}": SubResource("EventAsset_3tvbn"),
+"{fab158c3-6aee-4a27-b6f4-8ce01ea523b8}": SubResource("EventAsset_f7k44")
 }
 busses = {
-"{13c8e4b9-a999-4a03-8059-99db4fd169ec}": ExtResource("4_0you0"),
-"{850171b4-b5d7-45e3-90b0-fa7862432c34}": ExtResource("3_m35jl")
+"{7fa1f925-092b-4743-ac0d-11bac83b2aa6}": ExtResource("3_x0ujo"),
+"{b5dae493-8e20-4b1d-b99f-791c401709c8}": ExtResource("4_eqxqk")
 }
 bank_tree = [{
 "children": [],
 "item_type": 3,
 "node_name": "Master",
 "path": "bank:/Master",
-"resource": ExtResource("1_nghme")
+"resource": ExtResource("1_wl301")
 }, {
 "children": [],
 "item_type": 3,
 "node_name": "Master.strings",
 "path": "bank:/Master.strings",
-"resource": ExtResource("2_131px")
+"resource": ExtResource("2_fc6cm")
 }]
 event_tree = [{
+"children": [{
 "children": [],
 "item_type": 1,
-"node_name": "TypewriterEvent",
-"path": "event:/TypewriterEvent",
-"resource": ExtResource("5_grhf3")
+"node_name": "ambience_heartbeat_overarching",
+"path": "event:/Ambience/ambience_heartbeat_overarching",
+"resource": SubResource("EventAsset_7e76n")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_kitchen",
+"path": "event:/Ambience/ambience_kitchen",
+"resource": SubResource("EventAsset_dv6td")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_kitchen_refrigerator",
+"path": "event:/Ambience/ambience_kitchen_refrigerator",
+"resource": SubResource("EventAsset_v7kvg")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_kitchen_waterleak",
+"path": "event:/Ambience/ambience_kitchen_waterleak",
+"resource": SubResource("EventAsset_bnfwy")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_outside",
+"path": "event:/Ambience/ambience_outside",
+"resource": SubResource("EventAsset_vmy55")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_refrigerator_walk-in",
+"path": "event:/Ambience/ambience_refrigerator_walk-in",
+"resource": SubResource("EventAsset_3imn7")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_room_bedroom",
+"path": "event:/Ambience/ambience_room_bedroom",
+"resource": SubResource("EventAsset_jolx0")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_room_pool_deck",
+"path": "event:/Ambience/ambience_room_pool_deck",
+"resource": SubResource("EventAsset_qgks3")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_room_rec",
+"path": "event:/Ambience/ambience_room_rec",
+"resource": SubResource("EventAsset_g83hw")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "ambience_staircase",
+"path": "event:/Ambience/ambience_staircase",
+"resource": SubResource("EventAsset_sfecw")
+}],
+"item_type": 7,
+"node_name": "Ambience",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [{
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "door_close_metal",
+"path": "event:/Character/Doors/Metal/door_close_metal",
+"resource": SubResource("EventAsset_dww2l")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "door_lock_metal",
+"path": "event:/Character/Doors/Metal/door_lock_metal",
+"resource": SubResource("EventAsset_7m05u")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "door_open_metal",
+"path": "event:/Character/Doors/Metal/door_open_metal",
+"resource": SubResource("EventAsset_ev7i7")
+}],
+"item_type": 7,
+"node_name": "Metal",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "door_close_wood",
+"path": "event:/Character/Doors/Wood/door_close_wood",
+"resource": SubResource("EventAsset_lm7m2")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "door_lock_wood",
+"path": "event:/Character/Doors/Wood/door_lock_wood",
+"resource": SubResource("EventAsset_y4i71")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "door_open_wood",
+"path": "event:/Character/Doors/Wood/door_open_wood",
+"resource": SubResource("EventAsset_g8563")
+}],
+"item_type": 7,
+"node_name": "Wood",
+"path": "",
+"resource": null
+}],
+"item_type": 7,
+"node_name": "Doors",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "footsteps_antislip",
+"path": "event:/Character/Footsteps/footsteps_antislip",
+"resource": SubResource("EventAsset_yui4g")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "footsteps_carpet",
+"path": "event:/Character/Footsteps/footsteps_carpet",
+"resource": SubResource("EventAsset_moo4a")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "footsteps_squish",
+"path": "event:/Character/Footsteps/footsteps_squish",
+"resource": SubResource("EventAsset_8vwi2")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "footsteps_stairs_metal",
+"path": "event:/Character/Footsteps/footsteps_stairs_metal",
+"resource": SubResource("EventAsset_lhdjn")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "footsteps_stairs_wood",
+"path": "event:/Character/Footsteps/footsteps_stairs_wood",
+"resource": SubResource("EventAsset_0a7je")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "footsteps_tile",
+"path": "event:/Character/Footsteps/footsteps_tile",
+"resource": SubResource("EventAsset_sar6k")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "footsteps_wood",
+"path": "event:/Character/Footsteps/footsteps_wood",
+"resource": SubResource("EventAsset_rogld")
+}],
+"item_type": 7,
+"node_name": "Footsteps",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "player_fall",
+"path": "event:/Character/Movement/player_fall",
+"resource": SubResource("EventAsset_4xrof")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "player_shuffle_out_of_bed",
+"path": "event:/Character/Movement/player_shuffle_out_of_bed",
+"resource": SubResource("EventAsset_xqnka")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "player_uniform_off",
+"path": "event:/Character/Movement/player_uniform_off",
+"resource": SubResource("EventAsset_2hou8")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "player_uniform_on",
+"path": "event:/Character/Movement/player_uniform_on",
+"resource": SubResource("EventAsset_sgs8q")
+}],
+"item_type": 7,
+"node_name": "Movement",
+"path": "",
+"resource": null
+}],
+"item_type": 7,
+"node_name": "Character",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "bedroom_alarm_ongoing",
+"path": "event:/Interactables/Bedroom/bedroom_alarm_ongoing",
+"resource": SubResource("EventAsset_oxpxs")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "bedroom_alarm_stop_button",
+"path": "event:/Interactables/Bedroom/bedroom_alarm_stop_button",
+"resource": SubResource("EventAsset_d1nyr")
+}],
+"item_type": 7,
+"node_name": "Bedroom",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "boiler_heartbeat",
+"path": "event:/Interactables/Boiler/boiler_heartbeat",
+"resource": SubResource("EventAsset_kqo3h")
+}],
+"item_type": 7,
+"node_name": "Boiler",
+"path": "",
+"resource": null
+}],
+"item_type": 7,
+"node_name": "Interactables",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "menu_click",
+"path": "event:/UI/menu_click",
+"resource": SubResource("EventAsset_dxnrc")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "menu_toggle",
+"path": "event:/UI/menu_toggle",
+"resource": SubResource("EventAsset_thebc")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "object_appearing",
+"path": "event:/UI/object_appearing",
+"resource": SubResource("EventAsset_n4en0")
+}],
+"item_type": 7,
+"node_name": "UI",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [{
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "boiler_engine",
+"path": "event:/Unfinished/Boiler/Machinery/boiler_engine",
+"resource": SubResource("EventAsset_mhwfx")
+}],
+"item_type": 7,
+"node_name": "Machinery",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "soundscape_boiler_metal_pipes_loud",
+"path": "event:/Unfinished/Boiler/Pipes/soundscape_boiler_metal_pipes_loud",
+"resource": SubResource("EventAsset_y305u")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "soundscape_boiler_metal_pipes_ongoing",
+"path": "event:/Unfinished/Boiler/Pipes/soundscape_boiler_metal_pipes_ongoing",
+"resource": SubResource("EventAsset_opcrk")
+}],
+"item_type": 7,
+"node_name": "Pipes",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "ambience_room_boiler",
+"path": "event:/Unfinished/Boiler/Soundscape/ambience_room_boiler",
+"resource": SubResource("EventAsset_tsfq4")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "soundscape_boiler",
+"path": "event:/Unfinished/Boiler/Soundscape/soundscape_boiler",
+"resource": SubResource("EventAsset_d5hdu")
+}],
+"item_type": 7,
+"node_name": "Soundscape",
+"path": "",
+"resource": null
+}],
+"item_type": 7,
+"node_name": "Boiler",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "crewmate_movement_close",
+"path": "event:/Unfinished/Enemy/crewmate_movement_close",
+"resource": SubResource("EventAsset_witb0")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "crewmate_movement_far",
+"path": "event:/Unfinished/Enemy/crewmate_movement_far",
+"resource": SubResource("EventAsset_rujfa")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "eldritchboat_movement_close",
+"path": "event:/Unfinished/Enemy/eldritchboat_movement_close",
+"resource": SubResource("EventAsset_3tvbn")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "eldritchboat_movement_far",
+"path": "event:/Unfinished/Enemy/eldritchboat_movement_far",
+"resource": SubResource("EventAsset_5utv0")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "eldritchboat_tentacle_overarching",
+"path": "event:/Unfinished/Enemy/eldritchboat_tentacle_overarching",
+"resource": SubResource("EventAsset_btwtp")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "eldritchboat_tentacle_whip",
+"path": "event:/Unfinished/Enemy/eldritchboat_tentacle_whip",
+"resource": SubResource("EventAsset_jc5er")
+}],
+"item_type": 7,
+"node_name": "Enemy",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "player_pain1",
+"path": "event:/Unfinished/Fight/Inflict/player_pain1",
+"resource": SubResource("EventAsset_f7k44")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "player_pain2",
+"path": "event:/Unfinished/Fight/Inflict/player_pain2",
+"resource": SubResource("EventAsset_unflt")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "player_pain3",
+"path": "event:/Unfinished/Fight/Inflict/player_pain3",
+"resource": SubResource("EventAsset_8umid")
+}],
+"item_type": 7,
+"node_name": "Inflict",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "player_hitnoise1",
+"path": "event:/Unfinished/Fight/Receive/player_hitnoise1",
+"resource": SubResource("EventAsset_ai6ri")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "player_hitnoise2",
+"path": "event:/Unfinished/Fight/Receive/player_hitnoise2",
+"resource": SubResource("EventAsset_chcf1")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "player_hitnoise3",
+"path": "event:/Unfinished/Fight/Receive/player_hitnoise3",
+"resource": SubResource("EventAsset_p0ce7")
+}],
+"item_type": 7,
+"node_name": "Receive",
+"path": "",
+"resource": null
+}],
+"item_type": 7,
+"node_name": "Fight",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "music_meatboat_battle",
+"path": "event:/Unfinished/Music/Boss/music_meatboat_battle",
+"resource": SubResource("EventAsset_k4ynw")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "music_meatboat_final_fight",
+"path": "event:/Unfinished/Music/Boss/music_meatboat_final_fight",
+"resource": SubResource("EventAsset_qwk8j")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "music_meatboat_lose",
+"path": "event:/Unfinished/Music/Boss/music_meatboat_lose",
+"resource": SubResource("EventAsset_pa51k")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "music_meatboat_win",
+"path": "event:/Unfinished/Music/Boss/music_meatboat_win",
+"resource": SubResource("EventAsset_x1a4f")
+}],
+"item_type": 7,
+"node_name": "Boss",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "music_lounge_area",
+"path": "event:/Unfinished/Music/Lounge/music_lounge_area",
+"resource": SubResource("EventAsset_lps8i")
+}],
+"item_type": 7,
+"node_name": "Lounge",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "music_ongoingsoundtrack",
+"path": "event:/Unfinished/Music/Soundtrack/music_ongoingsoundtrack",
+"resource": SubResource("EventAsset_2gnjv")
+}],
+"item_type": 7,
+"node_name": "Soundtrack",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "music_titlescreen",
+"path": "event:/Unfinished/Music/Titlescreen/music_titlescreen",
+"resource": SubResource("EventAsset_stour")
+}],
+"item_type": 7,
+"node_name": "Titlescreen",
+"path": "",
+"resource": null
+}],
+"item_type": 7,
+"node_name": "Music",
+"path": "",
+"resource": null
+}],
+"item_type": 7,
+"node_name": "Unfinished",
+"path": "",
+"resource": null
+}, {
+"children": [{
+"children": [],
+"item_type": 1,
+"node_name": "lifeboat_inflation_process",
+"path": "event:/Vehicles/lifeboat_inflation_process",
+"resource": SubResource("EventAsset_u228m")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "lifeboat_on_water",
+"path": "event:/Vehicles/lifeboat_on_water",
+"resource": SubResource("EventAsset_tqkpv")
+}],
+"item_type": 7,
+"node_name": "Vehicles",
+"path": "",
+"resource": null
 }]
 bus_tree = [{
 "children": [{
@@ -44,10 +1093,10 @@ bus_tree = [{
 "item_type": 4,
 "node_name": "Reverb",
 "path": "bus:/Reverb",
-"resource": ExtResource("4_0you0")
+"resource": ExtResource("4_eqxqk")
 }],
 "item_type": 4,
 "node_name": "bus:",
 "path": "bus:/",
-"resource": ExtResource("3_m35jl")
+"resource": ExtResource("3_x0ujo")
 }]

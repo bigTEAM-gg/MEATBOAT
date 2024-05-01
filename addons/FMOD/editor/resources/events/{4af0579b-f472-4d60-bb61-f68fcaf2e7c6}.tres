@@ -1,0 +1,10 @@
+[gd_resource type="EventAsset" format=3 uid="uid://daa26euw1uiyf"]
+
+[resource]
+is_3d = true
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Vehicles/lifeboat_inflation_process"
+guid = "{4af0579b-f472-4d60-bb61-f68fcaf2e7c6}"
+name = "lifeboat_inflation_process"

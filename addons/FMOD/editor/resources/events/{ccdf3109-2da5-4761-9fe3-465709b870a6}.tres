@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://c27eguhuerges"]
+
+[resource]
+is_3d = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Ambience/ambience_room_rec"
+guid = "{ccdf3109-2da5-4761-9fe3-465709b870a6}"
+name = "ambience_room_rec"

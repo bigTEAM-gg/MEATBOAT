@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6dc5fce1-a347-4ce5-acad-ab6094a9f77e}">
+		<property name="assetPath">
+			<value>ambience_kitchen_waterleak.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>25</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ac7d2c3a-933d-4fde-a0cd-c3ab261fcad0}</destination>
+		</relationship>
+	</object>
+</objects>

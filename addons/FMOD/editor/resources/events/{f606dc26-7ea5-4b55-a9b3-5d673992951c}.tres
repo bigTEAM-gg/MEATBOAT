@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://0fnyakc41b2p"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/Unfinished/Enemy/eldritchboat_movement_close"
+guid = "{f606dc26-7ea5-4b55-a9b3-5d673992951c}"
+name = "eldritchboat_movement_close"

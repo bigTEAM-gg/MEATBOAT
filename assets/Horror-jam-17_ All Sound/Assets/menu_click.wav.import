@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dcjjnicci5vus"
+path="res://.godot/imported/menu_click.wav-389ef7a36cb8e28ce9ebab278716c3fb.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/menu_click.wav"
+dest_files=["res://.godot/imported/menu_click.wav-389ef7a36cb8e28ce9ebab278716c3fb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dl17whpq8a2ea"
+path="res://.godot/imported/bedroom_alarm_stop_button.wav-7be4d8ebfd7d3167b4ef89532d8a6577.sample"
+
+[deps]
+
+source_file="res://assets/Horror-jam-17_ All Sound/Assets/bedroom_alarm_stop_button.wav"
+dest_files=["res://.godot/imported/bedroom_alarm_stop_button.wav-7be4d8ebfd7d3167b4ef89532d8a6577.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
