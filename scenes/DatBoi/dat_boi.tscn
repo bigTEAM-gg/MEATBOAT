@@ -1,19 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://sge7qh44trxa"]
 
 [ext_resource type="Script" path="res://scenes/DatBoi/dat_boi.gd" id="1_cj2j3"]
-[ext_resource type="Texture2D" uid="uid://iheqyc075hw7" path="res://assets/565-1617077594.png" id="1_nwmst"]
+[ext_resource type="PackedScene" path="res://CharStatic.tscn" id="2_6tfnn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6gnqv"]
 
 [node name="DatBoi" type="CharacterBody3D"]
 script = ExtResource("1_cj2j3")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(0.175082, 0, 0, 0, 0.20255, 0, 0, 0, 1, 0, 0, 0)
-billboard = 2
-texture = ExtResource("1_nwmst")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.994478, 0)
 shape = SubResource("CapsuleShape3D_6gnqv")
 disabled = true
 
@@ -24,3 +20,5 @@ debug_enabled = true
 process_callback = 0
 wait_time = 0.5
 autostart = true
+
+[node name="char" parent="." instance=ExtResource("2_6tfnn")]
