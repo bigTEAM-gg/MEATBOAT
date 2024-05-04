@@ -1,4 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://c6lamg4q61u2t"]
+[gd_scene load_steps=15 format=3 uid="uid://c6lamg4q61u2t"]
+
+[ext_resource type="Material" uid="uid://c1wyenhrlrubg" path="res://assets/materials/coffeetable/coffeetable_MAT.tres" id="1_0txas"]
+[ext_resource type="Texture2D" uid="uid://d0lsp5ex4mbmt" path="res://assets/materials/GuestDoor/guestdoor_guestdoor_handle_MAT_BaseColor.png" id="2_6240d"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q4eg"]
 resource_name = "Wood"
@@ -39,6 +42,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_n78lk")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_026u5"]
+albedo_texture = ExtResource("2_6240d")
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_i4p77"]
 _surfaces = [{
 "aabb": AABB(4.76837e-07, -0.687521, -0.0386455, 0.501085, 1.37504, 0.0386446),
@@ -71,6 +77,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_i4p77")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ms7u"]
+albedo_texture = ExtResource("2_6240d")
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_jwp4r"]
 _surfaces = [{
 "aabb": AABB(-0.501075, -0.687521, -0.0386454, 0.501085, 1.37504, 0.0386446),
@@ -102,6 +111,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jwp4r")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pjbwi"]
+albedo_texture = ExtResource("2_6240d")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_i3c14"]
 _surfaces = [{
@@ -137,24 +149,28 @@ shadow_mesh = SubResource("ArrayMesh_i3c14")
 
 [node name="Furniture_Cabinet_1" type="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = ExtResource("1_0txas")
 gi_mode = 0
 mesh = SubResource("ArrayMesh_ljfhe")
 skeleton = NodePath("")
 
 [node name="Furniture_Cabinet_1_Door_1" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.501076, 0.259919, 0.414246)
+material_override = SubResource("StandardMaterial3D_026u5")
 gi_mode = 0
 mesh = SubResource("ArrayMesh_yf3e7")
 skeleton = NodePath("")
 
 [node name="Furniture_Cabinet_1_Door_2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.501076, 0.259919, 0.414246)
+material_override = SubResource("StandardMaterial3D_0ms7u")
 gi_mode = 0
 mesh = SubResource("ArrayMesh_vxh8v")
 skeleton = NodePath("")
 
 [node name="Furniture_Cabinet_1_Drawer" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.754699, 0.11286)
+material_override = SubResource("StandardMaterial3D_pjbwi")
 gi_mode = 0
 mesh = SubResource("ArrayMesh_5ygvv")
 skeleton = NodePath("")

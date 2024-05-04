@@ -1,4 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://4pixu0lbaen2"]
+[gd_scene load_steps=6 format=3 uid="uid://4pixu0lbaen2"]
+
+[ext_resource type="Texture2D" uid="uid://c5ha1tawo6wtu" path="res://assets/FurnitureMisc/Furnitures/Textures/Wood/TiledWood_Color.png" id="1_hlfij"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qooj"]
+albedo_texture = ExtResource("1_hlfij")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q4eg"]
 resource_name = "Wood"
@@ -38,6 +43,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_0hjvq")
 
 [node name="Furniture_Table_2" type="MeshInstance3D"]
+material_override = SubResource("StandardMaterial3D_0qooj")
 gi_mode = 0
 mesh = SubResource("ArrayMesh_28h6y")
 skeleton = NodePath("")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bt2k1rda4tkyf"]
+[gd_scene load_steps=6 format=3 uid="uid://bt2k1rda4tkyf"]
 
 [ext_resource type="Material" uid="uid://cgmeerup3t55y" path="res://assets/materials/ConcretePillar/ConcretePillarMat.tres" id="1_a3iey"]
 
@@ -40,7 +40,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_i0bpm")
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_aevoq"]
+data = PackedVector3Array(-0.4805, 3.3487, 0.4804, 0.4805, 3.3487, 0.4804, -0.4805, 0, 0.4804, 0.4805, 3.3487, 0.4804, 0.4805, 0, 0.4804, -0.4805, 0, 0.4804, 0.4805, 3.3487, 0.4804, -0.4805, 3.3487, 0.4804, 0.4805, 3.3487, -0.4805, -0.4805, 3.3487, 0.4804, -0.4805, 3.3487, -0.4805, 0.4805, 3.3487, -0.4805, -0.4805, 0, -0.4805, 0.4805, 0, -0.4805, -0.4805, 3.3487, -0.4805, 0.4805, 0, -0.4805, 0.4805, 3.3487, -0.4805, -0.4805, 3.3487, -0.4805, 0.4805, 0, 0.4804, -0.4805, 0, -0.4805, -0.4805, 0, 0.4804, 0.4805, 0, 0.4804, 0.4805, 0, -0.4805, -0.4805, 0, -0.4805, 0.4805, 0, -0.4805, 0.4805, 0, 0.4804, 0.4805, 3.3487, -0.4805, 0.4805, 3.3487, 0.4804, 0.4805, 3.3487, -0.4805, 0.4805, 0, 0.4804, -0.4805, 3.3487, 0.4804, -0.4805, 0, 0.4804, -0.4805, 0, -0.4805, -0.4805, 0, -0.4805, -0.4805, 3.3487, -0.4805, -0.4805, 3.3487, 0.4804)
+
 [node name="pillar_industrial" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_wxupi")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("1_a3iey")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_aevoq")

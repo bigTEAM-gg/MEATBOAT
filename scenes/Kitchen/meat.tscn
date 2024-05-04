@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyrd3g87l854"]
+[gd_scene load_steps=5 format=3 uid="uid://dyrd3g87l854"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uukxs"]
 resource_name = "cooking"
@@ -40,6 +40,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jj73o")
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5vhnf"]
+height = 2.26313
+
 [node name="meat" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_p8whw")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0745778, 1.63258, -0.118373)
+shape = SubResource("CapsuleShape3D_5vhnf")

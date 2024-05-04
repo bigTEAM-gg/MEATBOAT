@@ -1,4 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://da65n4gqkflvf"]
+[gd_scene load_steps=6 format=3 uid="uid://da65n4gqkflvf"]
+
+[ext_resource type="Texture2D" uid="uid://5gfohm20txyi" path="res://assets/materials/Wall/WarmtoneWall/wall_warmtone_BaseColor.png" id="1_gkhi7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yi5jc"]
+albedo_texture = ExtResource("1_gkhi7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b15pj"]
 resource_name = "lambert1"
@@ -41,5 +46,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_rodfn")
 
 [node name="wall_window" type="MeshInstance3D"]
+material_override = SubResource("StandardMaterial3D_yi5jc")
 mesh = SubResource("ArrayMesh_16h0y")
 skeleton = NodePath("")

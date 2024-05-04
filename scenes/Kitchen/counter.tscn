@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2it2n7g5g8dt"]
+[gd_scene load_steps=5 format=3 uid="uid://c2it2n7g5g8dt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v6rxo"]
 resource_name = "food prep"
@@ -40,6 +40,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_yeahy")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_46wed"]
+size = Vector3(4.01379, 0.976563, 3.6886)
+
 [node name="counter" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_t2vp6")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0321655, 0.457411, 0.0239868)
+shape = SubResource("BoxShape3D_46wed")
