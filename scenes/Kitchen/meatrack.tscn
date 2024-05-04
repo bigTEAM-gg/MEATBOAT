@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://debs0hpfqsxkp"]
+[gd_scene load_steps=5 format=3 uid="uid://debs0hpfqsxkp"]
+
+[ext_resource type="Material" uid="uid://dfuphy78ljwdh" path="res://assets/materials/Piano/PainoMetal_MAT.tres" id="1_p2eji"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v6rxo"]
 resource_name = "food prep"
@@ -39,5 +41,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7wg1a")
 
 [node name="meatrack" type="MeshInstance3D"]
+material_override = ExtResource("1_p2eji")
 mesh = SubResource("ArrayMesh_pewd3")
 skeleton = NodePath("")
