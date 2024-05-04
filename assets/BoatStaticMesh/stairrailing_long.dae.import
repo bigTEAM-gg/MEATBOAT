@@ -3,18 +3,18 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://oqmj1lxab03v"
-path="res://.godot/imported/stair2_R_COL.dae-ec633545f82bd95ec134731d0f5854c1.scn"
+uid="uid://c2b3v5oupa4tc"
+path="res://.godot/imported/stairrailing_long.dae-1372e92d2d7ff0fd384b611e56ccdb5e.scn"
 
 [deps]
 
-source_file="res://assets/BoatStaticMesh/stair2_R_COL.dae"
-dest_files=["res://.godot/imported/stair2_R_COL.dae-ec633545f82bd95ec134731d0f5854c1.scn"]
+source_file="res://assets/BoatStaticMesh/stairrailing_long.dae"
+dest_files=["res://.godot/imported/stairrailing_long.dae-1372e92d2d7ff0fd384b611e56ccdb5e.scn"]
 
 [params]
 
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
+nodes/root_type=""
+nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
@@ -30,5 +30,5 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={}
-gltf/naming_version=0
+gltf/naming_version=1
 gltf/embedded_image_handling=1
