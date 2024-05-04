@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cct2whmjqnuuw"
-path="res://.godot/imported/1stflrwalls.dae-5f237c6591d493ad47c156c9cadc4228.scn"
+uid="uid://dgqpppjb5bvq7"
+path="res://.godot/imported/Stairs.dae-50124e6cf579c887f733155039fa0eb3.scn"
 
 [deps]
 
-source_file="res://assets/BoatStaticMesh/1stflrwalls.dae"
-dest_files=["res://.godot/imported/1stflrwalls.dae-5f237c6591d493ad47c156c9cadc4228.scn"]
+source_file="res://assets/BoatStaticMesh/Stairs.dae"
+dest_files=["res://.godot/imported/Stairs.dae-50124e6cf579c887f733155039fa0eb3.scn"]
 
 [params]
 

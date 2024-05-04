@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://uu47gkmiiq55"
-path="res://.godot/imported/3rdflrwalls.dae-d13aa4422ff3c40a550a00f153861e6b.scn"
+uid="uid://dgryduqao4pxk"
+path="res://.godot/imported/floor_COL.dae-fec154d41ea47d5e17c4a735cbe6e834.scn"
 
 [deps]
 
-source_file="res://assets/BoatStaticMesh/3rdflrwalls.dae"
-dest_files=["res://.godot/imported/3rdflrwalls.dae-d13aa4422ff3c40a550a00f153861e6b.scn"]
+source_file="res://assets/BoatStaticMesh/floor_COL.dae"
+dest_files=["res://.godot/imported/floor_COL.dae-fec154d41ea47d5e17c4a735cbe6e834.scn"]
 
 [params]
 
