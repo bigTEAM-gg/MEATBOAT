@@ -91,11 +91,11 @@ mesh = SubResource("BoxMesh_oto1m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5719, 0, -2.19189)
 
 [node name="DatBoi" parent="." node_paths=PackedStringArray("movement_target") instance=ExtResource("8_lw2e4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0355, 11.6905, 7.72598)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0355, 9.85864, 7.72598)
 movement_target = NodePath("../Player")
 
 [node name="BBall" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9923, 10.0849, 7.70622)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.2655, 10.6388, 9.61649)
 mass = 10.0
 physics_material_override = SubResource("PhysicsMaterial_wlfut")
 
@@ -115,7 +115,7 @@ billboard = 1
 texture = ExtResource("4_ekhby")
 
 [node name="Player" parent="." instance=ExtResource("1_aqx7j")]
-transform = Transform3D(-0.00970387, 0, -0.999953, 0, 1, 0, 0.999953, 0, -0.00970387, 19.4308, 13.6794, 6.41989)
+transform = Transform3D(-0.00970387, 0, -0.999953, 0, 1, 0, 0.999953, 0, -0.00970387, 19.4308, 9.86071, 6.41989)
 
 [node name="Ocean" parent="." instance=ExtResource("12_k1llt")]
 
