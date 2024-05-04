@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dikd3fdm6jdxl"]
+[gd_scene load_steps=5 format=3 uid="uid://dikd3fdm6jdxl"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q4eg"]
 resource_name = "Wood"
@@ -37,7 +37,17 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ei078")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_u3nft"]
+size = Vector3(1, 1.11371, 2.05927)
+
 [node name="Furniture_PoolChair_1" type="MeshInstance3D"]
 gi_mode = 0
 mesh = SubResource("ArrayMesh_lel23")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0663452, -0.038208)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00949097, 0.00814819)
+shape = SubResource("BoxShape3D_u3nft")
