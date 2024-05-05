@@ -41,6 +41,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_y7oyt")
 
 [node name="wall" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_u3otx")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("1_6hfhg")

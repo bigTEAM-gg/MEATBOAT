@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bebu7ftdnq6y1"]
+[gd_scene load_steps=6 format=3 uid="uid://bebu7ftdnq6y1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q4eg"]
 resource_name = "Wood"
@@ -37,6 +37,10 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ntnpm")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qvbq7"]
+albedo_color = Color(0.705882, 0.705882, 0.705882, 1)
+metallic = 0.63
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_i6p05"]
 size = Vector3(0.642822, 2.41577, 0.140137)
 
@@ -44,6 +48,7 @@ size = Vector3(0.642822, 2.41577, 0.140137)
 gi_mode = 0
 mesh = SubResource("ArrayMesh_vmpm5")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_qvbq7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 

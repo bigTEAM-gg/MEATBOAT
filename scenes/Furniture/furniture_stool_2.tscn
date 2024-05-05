@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvlfds7s4rcen"]
+[gd_scene load_steps=6 format=3 uid="uid://bvlfds7s4rcen"]
+
+[ext_resource type="Material" uid="uid://cr21e6v8hq08u" path="res://assets/materials/FloorTiles/Wood.tres" id="1_dety1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q4eg"]
 resource_name = "Wood"
@@ -43,6 +45,7 @@ shadow_mesh = SubResource("ArrayMesh_vgx8h")
 size = Vector3(0.628479, 0.668457, 0.616699)
 
 [node name="Furniture_Stool_2" type="MeshInstance3D"]
+material_override = ExtResource("1_dety1")
 gi_mode = 0
 mesh = SubResource("ArrayMesh_ammka")
 skeleton = NodePath("")
