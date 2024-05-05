@@ -4,9 +4,8 @@
 [ext_resource type="Script" path="res://addons/simple_fpsplayer/ability_grab.gd" id="2_gwqkd"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_euj4i"]
-radius = 0.185912
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 disable_mode = 2
 floor_max_angle = 0.802851
 script = ExtResource("1_1fhis")
@@ -35,3 +34,7 @@ script = ExtResource("2_gwqkd")
 
 [node name="GrabPosition3D" type="Marker3D" parent="rotation_helper/Camera3D/ability_grab"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="StudioListener3D" type="StudioListener3D" parent="." node_paths=PackedStringArray("attenuation_object", "rigidbody")]
+attenuation_object = NodePath("..")
+rigidbody = NodePath("..")
