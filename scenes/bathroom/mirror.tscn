@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://ds41wd1frmwi3"]
+[gd_scene load_steps=5 format=3 uid="uid://ds41wd1frmwi3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0ybu"]
 resource_name = "lambert2"
@@ -38,6 +38,13 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jmiw7")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vcnrv"]
+albedo_color = Color(0.65098, 0.65098, 0.65098, 1)
+metallic = 0.7
+roughness = 0.06
+subsurf_scatter_enabled = true
+
 [node name="mirror" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_v7dn4")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vcnrv")

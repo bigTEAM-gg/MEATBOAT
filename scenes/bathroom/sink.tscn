@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://fko68xh8bdl3"]
+[gd_scene load_steps=6 format=3 uid="uid://fko68xh8bdl3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0ybu"]
 resource_name = "lambert2"
@@ -38,12 +38,16 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_sif53")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c62pf"]
+albedo_color = Color(0.435294, 0.435294, 0.435294, 1)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_muw8d"]
 size = Vector3(1.45152, 0.921326, 1.34558)
 
 [node name="sink" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_c0ia4")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_c62pf")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
