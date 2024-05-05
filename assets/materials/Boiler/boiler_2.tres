@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://cturd7mwovq55"]
+
+[ext_resource type="Texture2D" uid="uid://bwxstfy6jiygy" path="res://assets/materials/Boiler/Boiler_2_TEX/DblBoiler_Base_color.png" id="1_0wbrv"]
+[ext_resource type="Texture2D" uid="uid://e72t28vxtccc" path="res://assets/materials/Boiler/Boiler_2_TEX/DblBoiler_Height.png" id="2_klo8l"]
+
+[resource]
+albedo_texture = ExtResource("1_0wbrv")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_klo8l")
