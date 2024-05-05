@@ -67,7 +67,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.47189, 7.64503)
 shape = SubResource("BoxShape3D_tyoxu")
 
 [node name="Sprite3D" type="Sprite3D" parent="Zilla"]
-transform = Transform3D(-0.260757, 0, -0.965404, 0, 1, 0, 0.965404, 0, -0.260757, 6.77472, 5.29627, -7.03462)
+transform = Transform3D(0.140918, 0, 0.990021, 0, 1, 0, -0.990021, 0, 0.140918, 6.77472, 5.29627, -7.03462)
 shaded = true
 texture = ExtResource("4_r13ua")
 
@@ -131,3 +131,14 @@ omni_range = 10.2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5816, 0, 11.8831)
 light_energy = 0.25
 shadow_enabled = true
+
+[node name="Zilla2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9558, 4.47189, 7.64503)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Zilla2"]
+shape = SubResource("BoxShape3D_tyoxu")
+
+[node name="Sprite3D" type="Sprite3D" parent="Zilla2"]
+transform = Transform3D(-0.0745489, 0, 0.0493447, 0, 0.0894005, 0, -0.0493447, 0, -0.0745489, 17.2127, 6.4671, 6.21594)
+shaded = true
+texture = ExtResource("4_r13ua")
