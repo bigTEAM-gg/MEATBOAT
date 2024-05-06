@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://d3w5qio0he75"]
+[gd_scene load_steps=5 format=3 uid="uid://d3w5qio0he75"]
+
+[ext_resource type="Material" path="res://assets/materials/Boiler/turbine.tres" id="1_2w4mo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hw15g"]
 resource_name = "checker_material_128x128"
@@ -43,3 +45,4 @@ shadow_mesh = SubResource("ArrayMesh_l4jvj")
 [node name="Turbine" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_nvo3w")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_2w4mo")
