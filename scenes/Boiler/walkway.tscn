@@ -1,4 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctmkof2r1ix50"]
+[gd_scene load_steps=7 format=3 uid="uid://ctmkof2r1ix50"]
+
+[ext_resource type="Texture2D" uid="uid://dkgad5lii4fni" path="res://assets/materials/Wall/MetalWall/wall_metal_BaseColor.png" id="1_u32as"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qak1m"]
+albedo_texture = ExtResource("1_u32as")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uclea"]
 resource_name = "lambert1"
@@ -40,6 +45,11 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_c0r0n")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kkked"]
+albedo_color = Color(0.917647, 0.917647, 0.917647, 1)
+
 [node name="Walkway" type="MeshInstance3D"]
+material_override = SubResource("StandardMaterial3D_qak1m")
 mesh = SubResource("ArrayMesh_7bkfn")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_kkked")
