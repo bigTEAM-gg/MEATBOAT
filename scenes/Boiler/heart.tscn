@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqpdsemioid1o"]
+[gd_scene load_steps=7 format=3 uid="uid://dqpdsemioid1o"]
 
 [ext_resource type="Material" uid="uid://c2qoe8if3fly6" path="res://assets/materials/Boiler/heart_chamber.tres" id="1_vr0e7"]
+[ext_resource type="PackedScene" uid="uid://ctfaw6onnxtws" path="res://scenes/Boiler/heart_tendrils.tscn" id="2_ap50v"]
+[ext_resource type="Material" uid="uid://6m2u584m5cv7" path="res://assets/materials/Boiler/tendrils.tres" id="3_fifxu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b3h86"]
 resource_name = "lambert1"
@@ -49,3 +51,7 @@ surface_material_override/0 = ExtResource("1_vr0e7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.38338, 1.887)
 light_color = Color(0.775897, 0.0201191, 0.214514, 1)
 light_energy = 1.808
+
+[node name="heart_tendrils_001" parent="." instance=ExtResource("2_ap50v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.941904, 0)
+material_override = ExtResource("3_fifxu")
