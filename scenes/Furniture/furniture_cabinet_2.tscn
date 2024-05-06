@@ -1,4 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://bshfnglkg5n0w"]
+[gd_scene load_steps=12 format=3 uid="uid://bshfnglkg5n0w"]
+
+[ext_resource type="Material" uid="uid://blgy58h4bhjx6" path="res://assets/materials/Piano/PainoWood_MAT.tres" id="1_r85e5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q4eg"]
 resource_name = "Wood"
@@ -102,6 +104,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s3rt0")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8dmvh"]
+albedo_color = Color(0.435294, 0.364706, 0.313726, 1)
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_mr5ff"]
 _surfaces = [{
 "aabb": AABB(-0.495677, -0.57468, -0.0876919, 0.495676, 1.68453, 0.0876927),
@@ -158,7 +163,11 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_mr5ff")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e8r7f"]
+albedo_color = Color(0.411765, 0.352941, 0.290196, 1)
+
 [node name="Furniture_Cabinet_2" type="MeshInstance3D"]
+material_override = ExtResource("1_r85e5")
 gi_mode = 0
 mesh = SubResource("ArrayMesh_df5kf")
 skeleton = NodePath("")
@@ -168,9 +177,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.495677, -0.0867244, 0.5935
 gi_mode = 0
 mesh = SubResource("ArrayMesh_dyhd1")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_8dmvh")
 
 [node name="Furniture_Cabinet_2_Door_2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.495676, -0.0865182, 0.593558)
 gi_mode = 0
 mesh = SubResource("ArrayMesh_dviy2")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_e8r7f")

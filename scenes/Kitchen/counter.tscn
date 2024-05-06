@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2it2n7g5g8dt"]
+[gd_scene load_steps=6 format=3 uid="uid://c2it2n7g5g8dt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v6rxo"]
 resource_name = "food prep"
@@ -40,12 +40,16 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_yeahy")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbqxu"]
+albedo_color = Color(0.85098, 0.584314, 0.360784, 1)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_46wed"]
 size = Vector3(4.01379, 0.976563, 3.6886)
 
 [node name="counter" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_t2vp6")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_cbqxu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 

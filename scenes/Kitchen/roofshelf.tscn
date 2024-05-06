@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://j7rll417ec12"]
+[gd_scene load_steps=5 format=3 uid="uid://j7rll417ec12"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfoeg"]
 resource_name = "storage"
@@ -38,6 +38,10 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_dlhwv")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5k5o"]
+albedo_color = Color(0.458824, 0.458824, 0.458824, 1)
+
 [node name="roofshelf" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_osole")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_b5k5o")
