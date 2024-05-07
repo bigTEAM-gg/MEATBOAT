@@ -7,6 +7,9 @@ var movement_speed: float = 2.0
 @onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
 
 func _ready():
+	$CharRigWalkFlashlight/AnimationPlayer.current_animation = "Armature|mixamo_com|Layer0_001 Retarget"
+	$CharRigWalkFlashlight/AnimationPlayer.active = true
+	$CharRigWalkFlashlight/AnimationPlayer.play()
 	# These values need to be adjusted for the actor's speed
 	# and the navigation layout.
 	navigation_agent.path_desired_distance = 0.5
@@ -39,3 +42,7 @@ func _physics_process(delta):
 
 	velocity = new_velocity
 	move_and_slide()
+
+
+func _on_animation_player_animation_finished(anim_name):
+	$CharRigWalkFlashlight/AnimationPlayer.play()
