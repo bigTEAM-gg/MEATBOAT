@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://tm0k8lfsces0"]
+[gd_scene load_steps=5 format=3 uid="uid://blxa3u8lgouff"]
 
-[ext_resource type="PackedScene" uid="uid://crlki1qpc8ekb" path="res://environment/spot_light_bright.tscn" id="67_6j25f"]
-[ext_resource type="PackedScene" uid="uid://dldjpqd27qbsx" path="res://environment/spot_light_reg.tscn" id="68_urr3g"]
-[ext_resource type="PackedScene" uid="uid://w06rejghl6gs" path="res://environment/spot_light_dim.tscn" id="69_3vk2x"]
-[ext_resource type="PackedScene" uid="uid://dyvvt87gwxolf" path="res://environment/spot_light_white.tscn" id="69_ydopq"]
+[ext_resource type="PackedScene" uid="uid://bdeixov6aukaf" path="res://environment/spot_light_bright.tscn" id="67_6j25f"]
+[ext_resource type="PackedScene" uid="uid://csprwow8u2fgl" path="res://environment/spot_light_reg.tscn" id="68_urr3g"]
+[ext_resource type="PackedScene" uid="uid://bnxfvwr3rgesm" path="res://environment/spot_light_dim.tscn" id="69_3vk2x"]
+[ext_resource type="PackedScene" uid="uid://bl08bsw5eyjfv" path="res://environment/spot_light_white.tscn" id="69_ydopq"]
 
 [node name="Lighting" type="Node3D"]
 
@@ -97,6 +97,7 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 6.1988
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.613086, 0, 0.790016, 0, 1, 0, -0.790016, 0, -0.613086, 0, 48.8646, -80.8827)
+visible = false
 light_color = Color(0.780392, 0.329412, 0.172549, 1)
 light_energy = 2.722
 light_indirect_energy = 5.778

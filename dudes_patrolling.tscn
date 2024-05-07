@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bj1c5o6ufsc7k"]
+
+[ext_resource type="PackedScene" uid="uid://sge7qh44trxa" path="res://scenes/DatBoi/dat_boi.tscn" id="1_8acei"]
+
+[node name="DudesPatrolling" type="Node3D"]
+
+[node name="DatBoi" parent="." instance=ExtResource("1_8acei")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 5, 7)
+PatrolNodes = Array[Vector3]([Vector3(38, 5, 7), Vector3(29, 5, 25), Vector3(19, 5, 7), Vector3(18, 5, -26), Vector3(40, 5, -25)])

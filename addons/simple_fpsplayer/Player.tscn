@@ -1,7 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgpjxoygnvyy4"]
+[gd_scene load_steps=13 format=3 uid="uid://dgpjxoygnvyy4"]
 
 [ext_resource type="Script" path="res://addons/simple_fpsplayer/Player.gd" id="1_1fhis"]
 [ext_resource type="Script" path="res://addons/simple_fpsplayer/ability_grab.gd" id="2_gwqkd"]
+[ext_resource type="EventAsset" uid="uid://cj016ukacd2o6" path="res://addons/FMOD/editor/resources/events/{b4d65f3b-e4a3-43aa-a65a-712bfd0c023a}.tres" id="3_hscu0"]
+[ext_resource type="EventAsset" uid="uid://cpx6qp87dybmo" path="res://addons/FMOD/editor/resources/events/{8284515f-fd3f-4e0a-82d7-145d6e90ef72}.tres" id="3_kri4s"]
+[ext_resource type="EventAsset" uid="uid://3qj387bobau4" path="res://addons/FMOD/editor/resources/events/{c9b2ca98-8b12-405b-a2a0-ded9216be831}.tres" id="4_bb7db"]
+[ext_resource type="EventAsset" uid="uid://bkjdeku5g7e2n" path="res://addons/FMOD/editor/resources/events/{a53e53ef-6f6e-4937-80f7-f90fd5d8fcc4}.tres" id="4_ojd3u"]
+[ext_resource type="Script" path="res://introflavor.gd" id="5_lgafh"]
+[ext_resource type="EventAsset" uid="uid://bwpx5bfwy1ltc" path="res://addons/FMOD/editor/resources/events/{5f019c5a-c851-42c5-be74-488c87fe1b1f}.tres" id="8_udnqo"]
+[ext_resource type="EventAsset" uid="uid://c0rlskjt6nkuj" path="res://addons/FMOD/editor/resources/events/{b830cdcf-9b80-4322-b6e7-f50346ed119a}.tres" id="9_q7h5g"]
+[ext_resource type="EventAsset" uid="uid://dnanl1oux1oyk" path="res://addons/FMOD/editor/resources/events/{51c03127-a3c8-4a0d-a8d9-3052e0bbb0ae}.tres" id="10_yqil8"]
+[ext_resource type="EventAsset" uid="uid://b6wju8glyrx65" path="res://addons/FMOD/editor/resources/events/{bd9e0b49-0543-4f07-aa32-66f76b8c0d2f}.tres" id="11_nvgac"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_euj4i"]
 
@@ -21,10 +30,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55408, 0)
 current = true
 
 [node name="flashlight_player" type="SpotLight3D" parent="rotation_helper/Camera3D"]
-visible = false
 light_color = Color(1, 0.858824, 0.847059, 1)
 light_energy = 3.0
-light_bake_mode = 0
+shadow_enabled = true
 spot_range = 10.0
 spot_angle_attenuation = 18.3792
 
@@ -38,3 +46,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
 [node name="StudioListener3D" type="StudioListener3D" parent="." node_paths=PackedStringArray("attenuation_object", "rigidbody")]
 attenuation_object = NodePath("..")
 rigidbody = NodePath("..")
+
+[node name="Alarm" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("3_hscu0")
+trigger_once = true
+
+[node name="AlarmClick" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("4_ojd3u")
+trigger_once = true
+
+[node name="OutOfBed" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("3_kri4s")
+trigger_once = true
+
+[node name="DoorOpen" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("4_bb7db")
+trigger_once = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+color = Color(0, 0, 0, 1)
+script = ExtResource("5_lgafh")
+
+[node name="FootstepsAntislip" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("8_udnqo")
+
+[node name="FootstepsWood" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("9_q7h5g")
+
+[node name="FootstepsMetal" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("10_yqil8")
+
+[node name="UIClick" type="StudioEventEmitter3D" parent="."]
+event = ExtResource("11_nvgac")

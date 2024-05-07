@@ -89,12 +89,12 @@ noise = SubResource("FastNoiseLite_ehrww")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sgfw0"]
 render_priority = 0
 shader = SubResource("Shader_oht2g")
-shader_parameter/albedo = Color(0.27451, 0.54902, 0.847059, 0.52549)
+shader_parameter/albedo = Color(1, 0.109804, 0.156863, 0.52549)
 shader_parameter/point_size = 1.0
 shader_parameter/roughness = 0.0
 shader_parameter/metallic_texture_channel = null
-shader_parameter/specular = 0.5
-shader_parameter/metallic = 0.0
+shader_parameter/specular = 0.25
+shader_parameter/metallic = 1.0
 shader_parameter/refraction = 0.05
 shader_parameter/refraction_texture_channel = null
 shader_parameter/normal_scale = 1.0

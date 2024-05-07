@@ -1,6 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://dpuied7tbpn74"]
+[gd_scene load_steps=20 format=3 uid="uid://dpuied7tbpn74"]
 
 [ext_resource type="PackedScene" uid="uid://cxiwtclrsenfm" path="res://scenes/FMOD/FmodZonedEmitter.tscn" id="1_cdw0y"]
+[ext_resource type="EventAsset" uid="uid://70jxr1q6s26q" path="res://addons/FMOD/editor/resources/events/{607b459c-c55e-456f-a983-5647551c854f}.tres" id="2_o6kn0"]
+[ext_resource type="EventAsset" uid="uid://celfimb7gebqf" path="res://addons/FMOD/editor/resources/events/{09a3e382-e964-4265-9d8b-dbe4132a77c1}.tres" id="3_1apn0"]
+[ext_resource type="EventAsset" uid="uid://kmu5ulkrwm1s" path="res://addons/FMOD/editor/resources/events/{0264be86-4cf5-466a-9796-b129d5caf583}.tres" id="4_cwlsy"]
+[ext_resource type="EventAsset" uid="uid://cisae1sqa02dh" path="res://addons/FMOD/editor/resources/events/{c25b9492-0db0-43c8-863a-cab3986e663b}.tres" id="5_uf7lq"]
+[ext_resource type="EventAsset" uid="uid://c27eguhuerges" path="res://addons/FMOD/editor/resources/events/{ccdf3109-2da5-4761-9fe3-465709b870a6}.tres" id="6_idmwf"]
+[ext_resource type="EventAsset" uid="uid://yt774mswfmow" path="res://addons/FMOD/editor/resources/events/{f5da18e0-4b12-4e55-b171-3751f8e6774b}.tres" id="7_rn4d2"]
+[ext_resource type="EventAsset" uid="uid://cta4gb5li21uk" path="res://addons/FMOD/editor/resources/events/{54088711-4bfe-4901-a6d0-a3e5ad6a78b8}.tres" id="8_xfcrr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_olo06"]
 size = Vector3(6.89101, 1.20813, 14.6838)
@@ -14,201 +21,163 @@ size = Vector3(15.9282, 2.76245, 26.8812)
 [sub_resource type="BoxShape3D" id="BoxShape3D_soelo"]
 size = Vector3(25.2305, 2.8161, 25.7728)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_f268f"]
-size = Vector3(11.5836, 1.73254, 14.1437)
+[sub_resource type="BoxShape3D" id="BoxShape3D_3cdfo"]
+size = Vector3(5.46826, 1, 26.0006)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_er6jd"]
-size = Vector3(13.8646, 1.73254, 9.8479)
+[sub_resource type="BoxShape3D" id="BoxShape3D_fy8ds"]
+size = Vector3(5.38989, 1, 26.1594)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_aeef7"]
-size = Vector3(25.4279, 1.73254, 11.7268)
+[sub_resource type="BoxShape3D" id="BoxShape3D_4dxxu"]
+size = Vector3(5.46826, 1, 17.933)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_drbjs"]
-size = Vector3(25.4314, 1.73254, 11.7268)
+[sub_resource type="BoxShape3D" id="BoxShape3D_adtry"]
+size = Vector3(4.24792, 1, 17.933)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_eqbrr"]
-size = Vector3(25.2464, 1.73254, 11.7268)
+[sub_resource type="BoxShape3D" id="BoxShape3D_lc8xl"]
+size = Vector3(25.3294, 1, 11.5203)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_gg026"]
-size = Vector3(7.71594, 1.73254, 11.7268)
+[sub_resource type="BoxShape3D" id="BoxShape3D_ww0xx"]
+size = Vector3(22.086, 6.57758, 40.7688)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4tin0"]
+size = Vector3(21.6612, 6.23871, 34.7783)
 
 [node name="Ambience" type="Node3D"]
 
-[node name="KitchenFridge" parent="." instance=ExtResource("1_cdw0y")]
+[node name="RecKitchen" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.4952, 0)
+
+[node name="KitchenFridge" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("2_o6kn0")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.67779, 10.73, -13.9259)
 
-[node name="Area3D" type="Area3D" parent="KitchenFridge"]
+[node name="Area3D" type="Area3D" parent="RecKitchen/KitchenFridge"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="KitchenFridge/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/KitchenFridge/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.51685, -0.104065, -6.13612)
-visible = false
 shape = SubResource("BoxShape3D_olo06")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="KitchenFridge/Area3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RecKitchen/KitchenFridge/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03902, 0.527695, -0.7517)
-visible = false
 shape = SubResource("BoxShape3D_gk01w")
 
-[node name="KitchenAmbience" parent="." instance=ExtResource("1_cdw0y")]
+[node name="KitchenAmbience" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("3_1apn0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52, 10.839, -11.3134)
 
-[node name="Area3D" type="Area3D" parent="KitchenAmbience"]
+[node name="Area3D" type="Area3D" parent="RecKitchen/KitchenAmbience"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="KitchenAmbience/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/KitchenAmbience/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.453751, 0.0811768, 4.80566)
-visible = false
 shape = SubResource("BoxShape3D_r7mkf")
 
-[node name="RecRoom1" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 0.999284, -0.0378297, 0, 0.0378297, 0.999284, 0, 7.34674, 17.318)
+[node name="HeartPiano" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("4_cwlsy")
+transform = Transform3D(1, 0, 0, 0, 0.999284, -0.0378297, 0, 0.0378297, 0.999284, 0, 3.68068, 17.318)
 
-[node name="Area3D" type="Area3D" parent="RecRoom1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.55524, -0.13459)
+[node name="Area3D" type="Area3D" parent="RecKitchen/HeartPiano"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.15707, -0.270944)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RecRoom1/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023468, -0.130875, 0.696152)
-visible = false
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/HeartPiano/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023468, -0.130875, 0.69615)
 shape = SubResource("BoxShape3D_soelo")
 
-[node name="Hallway" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.97094, 7.56886, 0)
+[node name="HeartPiano2" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("5_uf7lq")
+transform = Transform3D(1, 0, 0, 0, 0.999284, -0.0378297, 0, 0.0378297, 0.999284, 0, 3.68068, 17.318)
 
-[node name="Area3D" type="Area3D" parent="Hallway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Area3D" type="Area3D" parent="RecKitchen/HeartPiano2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.15707, -0.270944)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16272, 0.366272, 0.909271)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/HeartPiano2/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023468, -0.130875, 0.69615)
+shape = SubResource("BoxShape3D_soelo")
 
-[node name="Hallway2" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.97094, 7.56886, -9.74241)
+[node name="Hallway" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("6_idmwf")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1307, 6.39394, 0)
 
-[node name="Area3D" type="Area3D" parent="Hallway2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Area3D" type="Area3D" parent="RecKitchen/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.0083, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway2/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16272, 0.366272, 0.909271)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/Hallway/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.262451, 0, 0.333786)
+shape = SubResource("BoxShape3D_3cdfo")
 
-[node name="Hallway3" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.97094, 7.56886, -18.5535)
+[node name="Hallway4" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("6_idmwf")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.63316, 6.39394, 0)
 
-[node name="Area3D" type="Area3D" parent="Hallway3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Area3D" type="Area3D" parent="RecKitchen/Hallway4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.0083, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway3/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16272, 0.366272, 0.909271)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/Hallway4/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.223267, 0, 0.413193)
+shape = SubResource("BoxShape3D_fy8ds")
 
-[node name="Hallway4" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.97094, 7.56886, -21.5855)
+[node name="Hallway2" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("6_idmwf")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1307, 6.39394, -10.5465)
 
-[node name="Area3D" type="Area3D" parent="Hallway4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Area3D" type="Area3D" parent="RecKitchen/Hallway2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.0083, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway4/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16272, 0.366272, 0.909271)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/Hallway2/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.262451, 0, -3.69998)
+shape = SubResource("BoxShape3D_4dxxu")
 
-[node name="Hallway10" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7588, 7.56886, 0)
+[node name="Hallway3" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("6_idmwf")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.55741, 6.39394, -10.5465)
 
-[node name="Area3D" type="Area3D" parent="Hallway10"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Area3D" type="Area3D" parent="RecKitchen/Hallway3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.0083, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway10/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16272, 0.366272, 0.909271)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/Hallway3/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.87262, 0, -3.69998)
+shape = SubResource("BoxShape3D_adtry")
 
-[node name="Hallway11" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7588, 7.56886, -9.74241)
+[node name="lounge" parent="RecKitchen" instance=ExtResource("1_cdw0y")]
+event = ExtResource("5_uf7lq")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.641863, 6.58777, -26.6961)
 
-[node name="Area3D" type="Area3D" parent="Hallway11"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Area3D" type="Area3D" parent="RecKitchen/lounge"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.203, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway11/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16272, 0.366272, 0.909271)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecKitchen/lounge/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.601068, 0, 0.866333)
+shape = SubResource("BoxShape3D_lc8xl")
 
-[node name="Hallway12" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7588, 7.56886, -18.5535)
+[node name="Boiler" type="Node3D" parent="."]
 
-[node name="Area3D" type="Area3D" parent="Hallway12"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Heartbeat" parent="Boiler" instance=ExtResource("1_cdw0y")]
+event = ExtResource("7_rn4d2")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.583055, 14.0793)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway12/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16272, 0.366272, 0.909271)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="Area3D" type="Area3D" parent="Boiler/Heartbeat"]
 
-[node name="Hallway13" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7588, 7.56886, -21.5855)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Boiler/Heartbeat/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0379944, 0.279449, -19.8844)
+shape = SubResource("BoxShape3D_ww0xx")
 
-[node name="Area3D" type="Area3D" parent="Hallway13"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Outside1" parent="Boiler" instance=ExtResource("1_cdw0y")]
+event = ExtResource("8_xfcrr")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.41002, -14.6431)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway13/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77109, 0.366272, 2.11771)
-visible = false
-shape = SubResource("BoxShape3D_f268f")
+[node name="Area3D" type="Area3D" parent="Boiler/Outside1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.57897, 0)
 
-[node name="Hallway5" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.97094, 7.56886, -25.9972)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Boiler/Outside1/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.150772, -0.422211, 3.18495)
+shape = SubResource("BoxShape3D_4tin0")
 
-[node name="Area3D" type="Area3D" parent="Hallway5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
+[node name="Outside2" parent="Boiler" instance=ExtResource("1_cdw0y")]
+event = ExtResource("8_xfcrr")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.41002, 10.5814)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway5/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.23707, 0.366272, -0.03018)
-visible = false
-shape = SubResource("BoxShape3D_er6jd")
+[node name="Area3D" type="Area3D" parent="Boiler/Outside2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.57897, 0)
 
-[node name="Hallway6" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.41452, 7.56886, -25.9972)
-
-[node name="Area3D" type="Area3D" parent="Hallway6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway6/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4468, 0.366272, 0.120224)
-visible = false
-shape = SubResource("BoxShape3D_aeef7")
-
-[node name="Hallway7" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15412, 7.56886, -25.9972)
-
-[node name="Area3D" type="Area3D" parent="Hallway7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway7/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12007, 0.366272, 0.120224)
-visible = false
-shape = SubResource("BoxShape3D_drbjs")
-
-[node name="Hallway8" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.56397, 7.56886, -25.9972)
-
-[node name="Area3D" type="Area3D" parent="Hallway8"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway8/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.56694, 0.366272, 0.120224)
-visible = false
-shape = SubResource("BoxShape3D_eqbrr")
-
-[node name="Hallway9" parent="." instance=ExtResource("1_cdw0y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.35378, 7.56886, -25.9972)
-
-[node name="Area3D" type="Area3D" parent="Hallway9"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.53052, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway9/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1983, 0.366272, 0.120224)
-visible = false
-shape = SubResource("BoxShape3D_gg026")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Boiler/Outside2/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.150772, -0.422211, 3.18495)
+shape = SubResource("BoxShape3D_4tin0")

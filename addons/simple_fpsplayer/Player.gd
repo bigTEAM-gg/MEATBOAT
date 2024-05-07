@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+var head = preload("res://scenes/head.tscn")
+
 const ACCEL = 10
 const DEACCEL = 30
 
@@ -24,6 +26,16 @@ func _ready():
 	
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
+	$Alarm.play()
+	await get_tree().create_timer(1).timeout
+	$Alarm.stop()
+	$AlarmClick.play()
+	await get_tree().create_timer(1).timeout
+	$OutOfBed.play()
+	await get_tree().create_timer(5.5).timeout
+	$DoorOpen.play()
+	$ColorRect.queue_free()
 
 func _input(event):
 	
@@ -48,8 +60,10 @@ func _input(event):
 		if Input.is_action_just_pressed("flashlight"):
 			if flashlight.is_visible_in_tree() and not event.echo:
 				flashlight.hide()
+				$UIClick.play()
 			elif not event.echo:
 				flashlight.show()
+				$UIClick.play()
 
 func _process(delta):
 	var x_power = Input.get_action_strength("look_right") + (Input.get_action_strength("look_left") * -1.0)
@@ -61,6 +75,9 @@ func _process(delta):
 	var camera_rot = rotation_helper.rotation
 	camera_rot.x = clampf(camera_rot.x, -1.4, 1.4)
 	rotation_helper.rotation = camera_rot
+
+var steps_active = false
+var foot_sound = -1
 
 func _physics_process(delta):
 	
@@ -91,7 +108,6 @@ func _physics_process(delta):
 #	5b. False: return null or display an error message
 #	6. Feedback: Indicate to the player the result of the combination process
 
-
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with a custom keymap depending on your control scheme. These strings default to the arrow keys layout.
 	var input_dir = Input.get_vector("left", "right", "up", "down")
@@ -109,3 +125,39 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	
+	if (foot_sound == 0 and global_position.y <= 8) or (foot_sound == 1 and global_position.y <= 4) or (foot_sound == 2 and global_position.y > 4):
+		$FootstepsAntislip.stop()
+		$FootstepsWood.stop()
+		$FootstepsMetal.stop()
+		foot_sound = -1
+		steps_active = false
+		return
+	
+	if velocity.length() > 0:
+		if not steps_active:
+			if global_position.y > 8:
+				$FootstepsWood.play()
+				foot_sound = 0
+			elif global_position.y > 4:
+				$FootstepsAntislip.play()
+				foot_sound = 1
+			else:
+				$FootstepsMetal.play()
+				foot_sound = 2
+			steps_active = true
+	else:
+		if steps_active:
+			$FootstepsAntislip.stop()
+			$FootstepsWood.stop()
+			$FootstepsMetal.stop()
+			steps_active = false
+			foot_sound = -1
+
+func kill():
+	var h = head.instantiate()
+	h.position = global_position
+	h.position.y += 2
+	# h.apply_force(Vector3(1, 1, 1))
+	get_parent().add_child(h)
+	$rotation_helper/Camera3D.current = false

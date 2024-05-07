@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://b31ve4wo5s035"]
 
-[ext_resource type="Texture2D" uid="uid://c7blkd3ro87yt" path="res://assets/Cabin/bed_diffuse.png" id="1_i20oc"]
+[ext_resource type="Texture2D" uid="uid://cmtx5lo7lyn3s" path="res://assets/bball.png" id="1_50rjg"]
 
 [sub_resource type="Shader" id="Shader_h6c7g"]
 code = "shader_type spatial;
@@ -70,4 +70,4 @@ shader_parameter/affine_mapping = false
 shader_parameter/alpha_scissor = 0.5
 shader_parameter/jitter = 0.25
 shader_parameter/resolution = Vector2i(320, 240)
-shader_parameter/albedo = ExtResource("1_i20oc")
+shader_parameter/albedo = ExtResource("1_50rjg")

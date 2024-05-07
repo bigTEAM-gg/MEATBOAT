@@ -19,12 +19,12 @@ config/icon="res://icon.png"
 
 FMODRuntime="*res://addons/FMOD/runtime/fmod_runtime_manager.gd"
 FMOD="*res://addons/FMOD/editor/fmod_guids.gd"
+Global="*res://Global.gd"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/size/always_on_top=true
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
@@ -147,3 +147,4 @@ throw={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

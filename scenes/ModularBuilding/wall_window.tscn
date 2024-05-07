@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://da65n4gqkflvf"]
 
-[ext_resource type="PackedScene" uid="uid://c30vxohex6xq" path="res://scenes/ModularBuilding/window.tscn" id="1_42y64"]
-[ext_resource type="Material" path="res://assets/FurnitureMisc/Furnitures/GLTF/Glass.material" id="2_ijqhb"]
-[ext_resource type="PackedScene" uid="uid://lxpfa4pu2lto" path="res://scenes/ModularBuilding/window_wall.tscn" id="2_o7ga5"]
-[ext_resource type="PackedScene" uid="uid://7b3gfuxc2sjc" path="res://scenes/ModularBuilding/edge.tscn" id="3_q1ctx"]
+[ext_resource type="PackedScene" path="res://scenes/ModularBuilding/window.tscn" id="1_42y64"]
+[ext_resource type="Material" uid="uid://dmd5fveya1gsj" path="res://assets/FurnitureMisc/Furnitures/GLTF/Glass.material" id="2_ijqhb"]
+[ext_resource type="PackedScene" path="res://scenes/ModularBuilding/window_wall.tscn" id="2_o7ga5"]
+[ext_resource type="PackedScene" path="res://scenes/ModularBuilding/edge.tscn" id="3_q1ctx"]
 [ext_resource type="Texture2D" uid="uid://5gfohm20txyi" path="res://assets/materials/Wall/WarmtoneWall/wall_warmtone_BaseColor.png" id="4_rw122"]
 [ext_resource type="Texture2D" uid="uid://dkgad5lii4fni" path="res://assets/materials/Wall/MetalWall/wall_metal_BaseColor.png" id="6_e5mfx"]
 

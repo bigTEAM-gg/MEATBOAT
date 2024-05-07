@@ -1,8 +1,9 @@
-[gd_scene format=3 uid="uid://w06rejghl6gs"]
+[gd_scene format=3 uid="uid://bnxfvwr3rgesm"]
 
 [node name="SpotLight_dim" type="SpotLight3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 8.55021, -3)
 light_color = Color(0.898039, 0.576471, 0.545098, 1)
 light_energy = 2.449
+light_bake_mode = 1
 spot_range = 8.0
 spot_angle = 58.8446
