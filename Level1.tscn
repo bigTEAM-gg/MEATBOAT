@@ -101,7 +101,7 @@ material = ExtResource("3_h3wop")
 transform = Transform3D(0.130037, 0, 0, 0, 0.130037, 0, 0, 0, 0.130037, 28.4989, 4.18187, -16.5458)
 billboard = 1
 sprite_frames = SubResource("SpriteFrames_a4yu6")
-frame_progress = 0.473535
+frame_progress = 0.671103
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Heart"]
 shape = SubResource("SphereShape3D_65g03")
