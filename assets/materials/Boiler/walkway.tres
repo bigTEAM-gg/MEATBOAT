@@ -1,3 +1,6 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://xtplsiarn4v2"]
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://xtplsiarn4v2"]
+
+[ext_resource type="Texture2D" uid="uid://b1ptb2nick320" path="res://assets/materials/Boiler/walkway_TEX/walkway_Base_color.png" id="1_vx8ip"]
 
 [resource]
+albedo_texture = ExtResource("1_vx8ip")
