@@ -1,15 +1,56 @@
-[gd_scene load_steps=22 format=3 uid="uid://bb7y24nigxi17"]
+[gd_scene load_steps=31 format=3 uid="uid://bb7y24nigxi17"]
 
 [ext_resource type="PackedScene" uid="uid://dgpjxoygnvyy4" path="res://addons/simple_fpsplayer/Player.tscn" id="1_aqx7j"]
+[ext_resource type="Texture2D" uid="uid://em2mx05g2xoi" path="res://assets/Boiler/heart/heart_animation1.png" id="1_xue1u"]
+[ext_resource type="Texture2D" uid="uid://b3ej0qgllugq7" path="res://assets/Boiler/heart/heart_animation2.png" id="2_pqxwg"]
 [ext_resource type="Texture2D" uid="uid://dknbr27dhg5ly" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="2_pslgr"]
+[ext_resource type="Texture2D" uid="uid://dc0cfw0xti1lm" path="res://assets/Boiler/heart/heart_animation3.png" id="3_1agfp"]
 [ext_resource type="Material" uid="uid://b31ve4wo5s035" path="res://assets/materials/ps1model.tres" id="3_h3wop"]
 [ext_resource type="Texture2D" uid="uid://cmtx5lo7lyn3s" path="res://assets/bball.png" id="4_ekhby"]
+[ext_resource type="Texture2D" uid="uid://dqgqn16ye63x" path="res://assets/Boiler/heart/heart_animation4.png" id="4_nl4ys"]
 [ext_resource type="Texture2D" uid="uid://b27mmihmaqkhd" path="res://assets/zilla.png" id="4_r13ua"]
+[ext_resource type="Texture2D" uid="uid://dqsnumf88j3wx" path="res://assets/Boiler/heart/heart_animation5.png" id="5_f4qw2"]
 [ext_resource type="PackedScene" uid="uid://bucqaa3ydelm7" path="res://assets/BoatScenes/Boat.scn" id="6_k2v27"]
+[ext_resource type="Texture2D" uid="uid://vw4mvnndidt2" path="res://assets/Boiler/heart/heart_animation6.png" id="6_oi20v"]
+[ext_resource type="Texture2D" uid="uid://ccf11pyt78qdt" path="res://assets/Boiler/heart/heart_animation7.png" id="7_qy813"]
 [ext_resource type="PackedScene" uid="uid://sge7qh44trxa" path="res://scenes/DatBoi/dat_boi.tscn" id="8_lw2e4"]
 [ext_resource type="BankAsset" uid="uid://bwarwhc4km3pu" path="res://addons/FMOD/editor/resources/banks/{6e91be51-054d-42cc-9bf7-2fe1a55ec2a6}.tres" id="9_ajcn0"]
 [ext_resource type="BankAsset" uid="uid://74m6pjhd4fhx" path="res://addons/FMOD/editor/resources/banks/{f68c9e85-7436-0e8e-1dbe-a51f54adc43e}.tres" id="10_cph1w"]
 [ext_resource type="PackedScene" uid="uid://bsj5qtch5n7sh" path="res://environment/water.tscn" id="12_k1llt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a4yu6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xue1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pqxwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1agfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nl4ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nl4ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_f4qw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oi20v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qy813")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_65g03"]
 
 [sub_resource type="Environment" id="Environment_oiuje"]
 background_mode = 1
@@ -53,6 +94,19 @@ bounce = 0.5
 material = ExtResource("3_h3wop")
 
 [node name="Level1" type="Node3D"]
+
+[node name="Heart" type="StaticBody3D" parent="."]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="Heart"]
+transform = Transform3D(0.130037, 0, 0, 0, 0.130037, 0, 0, 0, 0.130037, 28.4989, 4.18187, -16.5458)
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_a4yu6")
+frame_progress = 0.473535
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Heart"]
+shape = SubResource("SphereShape3D_65g03")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Heart"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_oiuje")
