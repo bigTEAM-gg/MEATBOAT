@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cth6imyva5ura"]
+[gd_scene load_steps=9 format=3 uid="uid://cth6imyva5ura"]
 
 [ext_resource type="Material" uid="uid://bsscv0cjli4a8" path="res://assets/materials/GuestDoor/GuestDoorMat.tres" id="1_apt3g"]
 [ext_resource type="Material" uid="uid://c2jfgs80msghc" path="res://assets/materials/GuestDoor/GuestDoorHandleMat.tres" id="2_hmnba"]
@@ -75,6 +75,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_dymnm")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_fwv2u"]
+size = Vector3(1, 2.19067, 0.0797119)
+
 [node name="guestdoor" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_dchqv")
 skeleton = NodePath("")
@@ -84,3 +87,9 @@ surface_material_override/0 = ExtResource("1_apt3g")
 mesh = SubResource("ArrayMesh_5g81a")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("2_hmnba")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.11121, 0.0263062)
+shape = SubResource("BoxShape3D_fwv2u")

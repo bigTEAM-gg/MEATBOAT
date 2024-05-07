@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8xkbidqf16m5"]
+[gd_scene load_steps=6 format=3 uid="uid://b8xkbidqf16m5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0ybu"]
 resource_name = "lambert2"
@@ -43,7 +43,17 @@ shadow_mesh = SubResource("ArrayMesh_phr8w")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nvdnu"]
 albedo_color = Color(0.843137, 0.843137, 0.843137, 1)
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xfa8q"]
+height = 1.25712
+radius = 0.382893
+
 [node name="toilet" type="MeshInstance3D"]
 mesh = SubResource("ArrayMesh_x7n6p")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_nvdnu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.585852, 0)
+shape = SubResource("CylinderShape3D_xfa8q")

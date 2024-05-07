@@ -42,6 +42,7 @@ shadow_mesh = SubResource("ArrayMesh_dlhwv")
 albedo_color = Color(0.458824, 0.458824, 0.458824, 1)
 
 [node name="roofshelf" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_osole")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_b5k5o")

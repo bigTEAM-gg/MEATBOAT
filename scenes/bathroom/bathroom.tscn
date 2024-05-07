@@ -35,7 +35,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.33912, 0, -0.156104)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.86916, 0, -0.789489)
 
 [node name="stalldoor3" parent="." instance=ExtResource("1_22ldt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8911, 0, 1.056)
+transform = Transform3D(0.736569, 0, -0.676362, 0, 1, 0, 0.676362, 0, 0.736569, 4.8911, 0, 1.056)
 
 [node name="tp3" parent="." instance=ExtResource("4_22wge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.34902, 0.972979, -0.833479)
@@ -47,7 +47,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.36102, 0, -0.156104)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.43018, 0, -0.789489)
 
 [node name="stalldoor4" parent="." instance=ExtResource("1_22ldt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.35198, 0, 1.056)
+transform = Transform3D(0.999515, 0, -0.0311317, 0, 1, 0, 0.0311317, 0, 0.999515, 7.35198, 0, 1.056)
 
 [node name="tp4" parent="." instance=ExtResource("4_22wge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.88815, 0.972979, -0.833479)
@@ -118,7 +118,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.58939, -0.195181, 8.80689)
 surface_material_override/0 = ExtResource("8_8pvfs")
 
 [node name="guestdoor" parent="." instance=ExtResource("10_g38s5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.59615, 0, 8.75582)
+transform = Transform3D(0.248453, 0, 0.968644, 0, 1, 0, -0.968644, 0, 0.248453, 6.19367, 0, 8.34725)
 
 [node name="mirror2" parent="." instance=ExtResource("6_ggigy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18504, -4.76837e-07, 8.8042)
