@@ -1,5 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bj0j2lfm0sfk4"]
+[gd_scene load_steps=3 format=3 uid="uid://bj0j2lfm0sfk4"]
 
 [ext_resource type="PackedScene" uid="uid://cxhc60v507nu2" path="res://scenes/Boiler/walkwaypiece.dae" id="1_ibcgl"]
+[ext_resource type="Material" uid="uid://xtplsiarn4v2" path="res://assets/materials/Boiler/walkway.tres" id="2_ndinb"]
 
 [node name="walkwaypiece" instance=ExtResource("1_ibcgl")]
+
+[node name="walkwapiece" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_ndinb")
