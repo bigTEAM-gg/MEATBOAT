@@ -22,11 +22,11 @@ current = true
 
 [node name="flashlight_player" type="SpotLight3D" parent="rotation_helper/Camera3D"]
 visible = false
+light_color = Color(1, 0.858824, 0.847059, 1)
 light_energy = 3.0
 light_bake_mode = 0
 spot_range = 10.0
-spot_angle = 15.0
-spot_angle_attenuation = 1.56917
+spot_angle_attenuation = 18.3792
 
 [node name="ability_grab" type="RayCast3D" parent="rotation_helper/Camera3D"]
 target_position = Vector3(0, 0, -2)
