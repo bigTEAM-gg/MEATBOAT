@@ -13,4 +13,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
-		$"../MagicBlocker".queue_free()
+		if is_instance_valid($"../MagicBlocker"):
+			$"../MagicBlocker".queue_free()

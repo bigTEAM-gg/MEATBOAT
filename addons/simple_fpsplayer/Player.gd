@@ -8,7 +8,7 @@ const DEACCEL = 30
 const SPEED = 5.0
 const SPRINT_MULT = 1.5
 const JUMP_VELOCITY = 4.5
-const MOUSE_SENSITIVITY = 0.06
+const MOUSE_SENSITIVITY = 0.12
 const JOY_SENSITIVITY = 1.0
 
 # Get the gravity from the project settings to be synced with RigidDynamicBody nodes.

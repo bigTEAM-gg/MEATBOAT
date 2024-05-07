@@ -12,9 +12,11 @@ func _ready():
 func _process(delta):
 	pass
 
+var did_scare = false
 
 func _on_body_entered(body):
-	if body.is_in_group("Player"):
+	if body.is_in_group("Player") and not did_scare:
+		did_scare = true
 		await get_tree().create_timer(3).timeout
 		var j = jump.instantiate()
 		j.global_position = $"../JumpscareSpawn".global_position
