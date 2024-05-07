@@ -56,12 +56,12 @@ func _input(event):
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	# Flashlight toggle. Defaults to F on Keyboard.
-	if event is InputEventKey:
+	if event is InputEventKey or event is InputEventJoypadButton:
 		if Input.is_action_just_pressed("flashlight"):
-			if flashlight.is_visible_in_tree() and not event.echo:
+			if flashlight.is_visible_in_tree():
 				flashlight.hide()
 				$UIClick.play()
-			elif not event.echo:
+			else:
 				flashlight.show()
 				$UIClick.play()
 

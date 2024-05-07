@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvrv6g1p8tl4q"]
+
+[ext_resource type="Material" uid="uid://1w2whh2xv0be" path="res://assets/materials/fakelight.tres" id="1_dlicj"]
+
+[node name="Fakelight" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+radius = 1.5
+height = 3.0
+cone = true
+material = ExtResource("1_dlicj")

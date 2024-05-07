@@ -65,7 +65,9 @@ func _physics_process(delta):
 		look_at(seen_player.global_position)
 	else:
 		look_at(prev_look_position)
+	rotation.x = 0
 	rotation.y += deg_to_rad(180)
+	rotation.z = 0
 	
 	move_and_slide()
 

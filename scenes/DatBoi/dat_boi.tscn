@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/DatBoi/dat_boi.gd" id="1_cj2j3"]
 [ext_resource type="Material" uid="uid://c8ba0ybofq28n" path="res://assets/materials/Character/CharacterMat.tres" id="2_1gb3k"]
+[ext_resource type="Material" uid="uid://1w2whh2xv0be" path="res://assets/materials/fakelight.tres" id="3_cujau"]
 [ext_resource type="PackedScene" uid="uid://cxiwtclrsenfm" path="res://scenes/FMOD/FmodZonedEmitter.tscn" id="3_kckhg"]
 [ext_resource type="EventAsset" uid="uid://dglsit55riulf" path="res://addons/FMOD/editor/resources/events/{96aabce8-94ad-4368-8cb0-a99a7b0a4cb5}.tres" id="4_culds"]
 [ext_resource type="EventAsset" uid="uid://cixkr4xpabi7h" path="res://addons/FMOD/editor/resources/events/{f5f6b511-dd0c-4a1a-8f34-96744d686e7b}.tres" id="5_ebsfi"]
@@ -123,12 +124,6 @@ bind/27/pose = Transform3D(-1, -3.88233e-08, 1.14844e-13, 9.14067e-08, 3.27825e-
 bind/28/name = &"heel.02.R"
 bind/28/bone = -1
 bind/28/pose = Transform3D(-1.37535e-07, -6.55651e-07, -0.999999, -1, 9.78311e-08, 4.61292e-08, 8.31058e-08, 1, -3.27825e-07, -0.0195796, -0.0726788, -0.0230261)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jge6b"]
-transparency = 4
-cull_mode = 2
-shading_mode = 0
-albedo_color = Color(1, 0.92549, 0.682353, 0.0431373)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_epvd0"]
 albedo_color = Color(0, 0, 0, 1)
@@ -2360,7 +2355,7 @@ radius = 5.0
 height = 20.0
 sides = 6
 cone = true
-material = SubResource("StandardMaterial3D_jge6b")
+material = ExtResource("3_cujau")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="CharRigWalkFlashlight/WGT-rig_hand_fk_L"]
 transform = Transform3D(0.453167, 0.891422, -0.00242652, -0.0134166, 0.00409874, -0.999902, -0.891325, 0.453155, 0.0138173, 0.566473, 2.11412, 1.12733)
