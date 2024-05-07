@@ -13,7 +13,7 @@ config_version=5
 config/name="Horror-jam-17"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.png"
+config/icon="res://assets/bball.png"
 
 [autoload]
 
