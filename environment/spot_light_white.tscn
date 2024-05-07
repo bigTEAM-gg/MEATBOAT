@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dyvvt87gwxolf"]
+
+[node name="SpotLight_white" type="SpotLight3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.373841, 9.47632, 3)
+spot_range = 6.52214
+spot_angle = 61.875
